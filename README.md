@@ -1,15 +1,119 @@
-# AI_WEB_HARNESS:
+# AI_WEB_GARDEN
+:
 DEMO Presentation for Google WebAI Wednesday:
 
->  "AI_RESEARCH_GARDEN" for "FRONTEND_FONTIER". 
+>  "AI_WEB_GARDEN" for "FRONTEND_FONTIER". 
+
+Using HTML++ (with Gemma 4, E2B, LiteRT).
+
+For METACOGNITIVE BIOMIMICRY!
+
+Inspired by J. Hinton (Google Brain) and Jason Mayes (WebAI). TYSM.
 
 ___
 
-## GOAL: showcase AI_BIOMIMICRY in Google GEMMA!
+## GOAL: 
 
-### START: with a AI_BASELINE:
+> Showcase AI_BIOMIMICRY in Google Gemma!
 
-1) Use an MVP HARNESS - to init GEMMA - called AI_WEB_HARNESS.
+### AI_TOOLS:
+
+HTML++ (methodology) for AI RESEARCH and EXPERIMENT rendering target!
+
+AI_WEB_HARNESS (baseline), to init GEMMA (stop, back, "conceptualize").
+
+1) From "Gemma 4 Good Hackathon"!
+
+2) Also from "Google Intensive Agents": 
+
+- Antigravity, SDD, SKILLS, (Web) Sandbox, called AI_WEB_GARDEN.
+
+3) Also from Google Gemini Pro "Extended Thinking" CodeGen.
+
+___
+
+### SHOWCASE:
+
+THREE GEMMA EXPERIMENTS, for METACOGNITIVE HIPPOCAMPUS BIOMIMICRY!
+
+___
+
+### SDD
+
+The Spec Driven Development is included in the HTML files under /specs
+
+____
+
+## Gemini RESEARCH of HIPPOCAMPUS:
+
+The hippocampus is a routing center for EPISODIC MEMORY.
+
+- Navigation and memory consolidation.
+
+____
+
+### GUIDE of "HIPPO_CAMPUS" BIOMIMICRY:
+
+> Mimicry through simple vocabulary!
+
+- MIMIC: Biologic Hippocampus - as "HIPPO_CAMPUS" ("METASTATE" in AI)
+
+- MIMIC: Neocortical Events & Navigation - as CONCEPTS: ("ATOMZ" & "AXIOMZ" in AI).
+
+- MIMIC: Short-term & long-term - into "STATIC" & "DYNAMIC" memory. 
+
+- MIMIC: "IMPERMANENCY" - as UX: 'haultable', 'prunable', 'reversable', 'editable', 'inversable'.
+
+- MIMIC: "index of pointers" as LIBRARY to brain - as "IDX" fluid numbering construct (to order text by LIBRARY of: DATE + TITLE + BOOK + CHAPTER + SECTION + SUBSECTION = "TXT_IDX").
+
+- MIMIC CA3 (associator) - as "IDX fragments returns memory structure" (auto-associative).
+
+> MIMIC long-term memory as markdown library called "MARKDOWN_BRAIN"!
+(simple folder with .md files) - as "STATIC_MEMORY".
+
+- MIMIC "temporal mapping" - as DATE_IDX (PREFIX and PREFIX_MASK)
+
+- MIMIC: Gemma is the Dentate Gyrus (DG).
+
+- CA1 (comparator) - as new_data with old_data "NOVELTY_DETECTOR".
+
+- SPW: Sharp-Wave Ripples "REPLAY" - as "REHASH"?
+
+- MIMIC "CONSOLIDATION" - as SUMMARY_JUDGE summarizes Metastate.
+
+- MIMIC single highly-dense token/embedding, as "AXIOMICS" (Saves it to IndexedDB).
+
+- DO NOT MIMIC short-term & long-term - as summary of metastate into "./longterm_brain", instead: "editable_by_human" (IndexedDB).
+____
+
+#### DYNAMIC MEMORY with IndexedDB.
+
+
+Core Subsystems (The Trisynaptic Circuit):
+
+- "ORTHOGONALIZE" (Gyrus) - 
+
+Dentate Gyrus (DG): The gateway. Its primary function is pattern separation. It takes highly similar inputs (e.g., two similar nodes or prompts) and orthogonalizes them into distinct, separate representations so memories don't blur together.
+
+CA3 (Cornu Ammonis 3): The auto-associative network. Its primary function is pattern completion. If you feed it a partial cue (a smell, or a fragment of a prompt), the recurrent connections in CA3 retrieve the entire associated memory structure.
+
+CA1 (Cornu Ammonis 1): The output node. It acts as the comparator, matching expectations from the neocortex with the new data coming from CA3, playing a vital role in temporal mapping (sequencing events in time).
+
+Subiculum: The main outbound relay, projecting consolidated signals back out to the cortex.
+
+Frontier/Unfinished Science:
+
+Adult Neurogenesis: The Dentate Gyrus is one of the only places in the human brain where new neurons are born throughout adulthood. Science is still debating exactly how these newborn neurons affect learning (likely by helping separate highly novel patterns from older ones).
+
+Time Cells: We've known about "place cells" (spatial maps) for decades, but recent frontier research focuses on "time cells"—neurons that fire to encode the specific temporal sequence of an event, allowing the brain to track the flow of time within a memory.
+
+Replay & Sharp-Wave Ripples (SPWs): During sleep or quiet wakefulness, the hippocampus physically "replays" the day's events at hyper-speed to the neocortex to solidify long-term memory.
+
+
+
+
+____
+
 
 2) Then build out (extend), many AI_RESEARCH_EXPERIMENTS - into AI_RESEARCH_GARDEN.
 

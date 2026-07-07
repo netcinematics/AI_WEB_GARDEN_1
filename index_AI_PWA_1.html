@@ -117,7 +117,7 @@
         .btn-back:active { background: rgba(59, 130, 246, 1); transform: scale(0.95); }
 
         .btn-stop-ai { 
-            position: absolute; top: 4.5rem; right: 1.5rem; z-index: 105; 
+            position: absolute; top: 7.5rem; right: 1rem; z-index: 105; 
             padding: 0.5rem 1rem; display: flex; align-items: center; gap: 0.5rem; 
             background: rgba(153, 27, 27, 0.7); border: 1px solid #ef4444; 
             color: #ffffff; font-weight: bold; cursor: pointer; text-transform: uppercase; 
@@ -145,11 +145,13 @@
     <div id="overlay-vignette"></div>
 
     <div class="ui-layer">
-        <div id="install-btn-container" style="display: none; position: absolute; top: 1.5rem; right: 4rem; z-index: 100;">
+        <div id="install-btn-container" style="display: none; position: 
+            absolute; bottom: 4.444rem; right: 1rem; z-index: 100;">
             <button id="install-btn" class="interactzone btn-concept monospace-text" style="margin-top:0; padding: 0.5rem 1rem; color: #00ffcc; border-color: #00ffcc; font-size: 0.875rem;">INSTALL PWA</button>
         </div>
 
-        <div class="interactzone flex items-center" style="position: absolute; top: 1.444rem; right: 1.5rem; z-index: 60; padding: 0.5rem 1rem; gap: 0.5rem;">
+        <div class="interactzone flex items-center" 
+            style="position: absolute; top: 0.888rem; right: 0.888rem; z-index: 60; padding: 0.5rem 1rem; gap: 0.5rem;">
             <div id="llmStatusDot" class="status-dot red"></div>
             <span id="llmStatus" style="font-size: 10px; font-weight: bold; letter-spacing: 0.2em; color: #ef4444; text-transform: uppercase;">LLM LOADING</span>
         </div>
@@ -158,7 +160,7 @@
 
         
         <button id="backBtn" class="interactzone btn-back monospace-text" 
-            style="position: absolute; top: 7.5rem; right: 1.5rem; z-index: 999; display: block;
+            style="position: absolute; top: 10.5rem; right: 1.5rem; z-index: 999; display: block;
             padding: 0.5rem 1rem; font-weight: bold; cursor: pointer; text-transform: uppercase; 
             font-size: 0.875rem; letter-spacing: 0.1em; 
             color: #ffffff;">↩️ BACK</button>
@@ -168,19 +170,31 @@
         </div>
 
         <div id="title-bar-panel" class="title-panel interactzone">
-            <button onclick="toggleTitlePanel(false)" class="btn-close" style="position: absolute; right: 0.5rem; top: 0.5rem;">✕</button>
-            <h1 style="font-size: 1.5rem; font-weight: bold; text-transform: uppercase; letter-spacing: 0.1em; margin: 0;">AI_WEB_HARNESS | AI_RESEARCH_GARDEN #1.0</h1>
-            <p class="monospace-text" style="font-size: 18px; color: skyblue; letter-spacing: 0.1em; margin: 1em 0 0.5rem 0; font-style: italic;">PHASE_1 : GEMMA_WEB_ENGINE.</p>
-            <p class="monospace-text" style="font-size: 18px; color: steelblue; letter-spacing: 0.1em; margin: 1em 0 0.5rem 1em;">Gemma : "Proof of Inference".</p>
-            <p class="monospace-text" style="font-size: 18px; color: steelblue; letter-spacing: 0.1em; margin: 1em 0 0.5rem 1em;">BASIC : Brain Diagnostics | GemmaBiomimicry.</p>
+            <button onclick="toggleTitlePanel(false)" class="btn-close" style="position: absolute; right: 0.5rem; top: 1.333rem;">✕</button>
+            <h1 style="font-size: 1.5rem; font-weight: bold; text-transform: uppercase; letter-spacing: 0.1em; margin: 0;">AI_RESEARCH_GARDEN #2.0</h1>
+            <p class="monospace-text" style="font-size: 18px; color:steelblue; letter-spacing: 0.1em; margin: 1em 0 0.5rem 0; 
+                font-style: italic;"><b>PHASE_1 : GEMMA_WEB_ENGINE | E2B 4 |</b></p>
+            <p class="monospace-text" style="font-size: 18px; color: steelblue; letter-spacing: 0.1em; margin: 1em 0 0.5rem 0; 
+                font-style: italic;"><b>PHASE_2 : AI_RESEARCH_GARDEN |</b></p>
+            <h1 class="monospace-text" style="font-size: 22px; color: dodgerblue; letter-spacing: 0.1em; 
+                margin: 1em 0 0.5rem 1em;"><b><i>AI_BIO_MIMICRY & AI_METACOGNITION:</i></b></h1>
+            <h2 class="monospace-text" style="font-size: 18px; color: skyblue; letter-spacing: 0.1em; 
+                margin: 1em 0 0.5rem 4em;">1) PFC_VIEWS (prefrontal cortex)</h2>
+            <h2 class="monospace-text" style="font-size: 18px; color: skyblue; letter-spacing: 0.1em; 
+                margin: 1em 0 0.5rem 4em;">2) HIPPO_CAMPUS (memory)</h2>
+            <h2 class="monospace-text" style="font-size: 18px; color: skyblue; letter-spacing: 0.1em; 
+                margin: 1em 0 0.5rem 4em;">3) ANTI_FRAGILITY (healing)</h2>
             
             <div class="flex items-center" style="margin-top: 0.5rem; width: 100%;">
                 <select id="domain-select" style="color:skyblue;" class="domain-select monospace-text" onchange="triggerConceptInference(this.value)">
                     <option style="color:skyblue;" value="" disabled selected> LLM Manifold SKILLS:</option>
-                    <option style="color:skyblue;" value="test_alive">1.1) Are you ALIVE? (no!) (metacognition)</option>
-                    <option style="color:skyblue;" value="test_rualive">1.2) RU ALIVE? (neologism opens deep semantics)</option>
+                    <option style="color:skyblue;" value="" disabled> A: CONTROL TESTS (LLM Identity)</option>
+                    <option style="color:skyblue;" value="test_alive">1.1) Are you ALIVE? (no) (metacognition)</option>
+                    <option style="color:skyblue;" value="test_rualive">1.2) RU ALIVE? (neologism as deep semantics)</option>
+                    <option style="color:skyblue;" value="" disabled> B:</option>
                     <option style="color:skyblue;" value="test_persona">2.1) AGENT PERSONA? (from local markdown library)</option>
                     <option style="color:skyblue;" value="test_signature">2.2) LLM Signature (HIPPOCAMPUS | identity)</option>
+                    <option style="color:skyblue;" value="" disabled> C:</option>
                     <option style="color:skyblue;" value="test_neolang">3.1) NEOLOGISM Inference? (conceptual_spectroscopy)</option>
                     <option style="color:skyblue;" value="test_context">3.2) JUDGE AGENT: What is EXISTENCE?</option>
                     <option style="color:skyblue;" value="test_medstate">3.3) NAVIGATE MEDICAL VERBOLOGY? (metastasis)</option>
@@ -248,7 +262,7 @@
         </div>
         
         <div class="monospace-text" style="position: absolute; bottom: 1.5rem; right: 1.5rem; opacity: 0.4; font-size: 9px; letter-spacing: 0.4em; pointer-events: none; text-transform: uppercase; border-bottom: 1px solid rgba(0,255,204,0.3); padding-bottom: 0.25rem;">
-            TELLECToSCOPE | AI_WEB_HARNESS
+            AI_WEB_GARDEN | BIOMIMICRY v2
         </div>
     </div>
 
