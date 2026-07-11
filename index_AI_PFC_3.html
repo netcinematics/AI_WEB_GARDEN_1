@@ -563,6 +563,106 @@ Syntax is the architecture of the soul.`;
             return sprite;
         }
 
+
+//-------------------------------------COLUMN DISPLAY
+
+    function updateLabelCanvas_COLUMN(canvas, text, isCenter, isSelected, isGem) {
+        const ctx = canvas.getContext('2d');
+        const canvasWidth = canvas.width;
+        const canvasHeight = canvas.height;
+        ctx.clearRect(0, 0, canvasWidth, canvasHeight);
+        
+        let textColor = isCenter ? '#ffff00' : (isGem ? '#ff00ff' : '#00ffcc');
+        if (isSelected && !isCenter) textColor = 'cyan'; 
+
+        let fontSize = isCenter ? 24 : 18;
+        if (text.length > 50) fontSize = 16; 
+        if (text.length > 100) fontSize = 14;
+
+        ctx.font = `bold ${fontSize}px Courier New`;
+        const lineHeight = fontSize * 1.2;
+        const maxWidth = canvasWidth - 20; // 20px padding on each side
+        
+        // Calculate word wrap lines
+        const words = text.split(',');
+        let line = '';
+        const lines = [];
+        for(let n = 0; n < words.length; n++) {
+            const testLine = line + words[n] + ' ';
+            const metrics = ctx.measureText(testLine);
+            if (metrics.width > maxWidth && n > 0) {
+                lines.push(line);
+                line = words[n] + ' ';
+            } else {
+                line = testLine;
+            }
+        }
+        lines.push(line);
+
+        // Draw background box based on lines length
+        if (isCenter || isSelected) {
+            ctx.fillStyle = 'rgba(0, 10, 20, 0.85)'; 
+            ctx.strokeStyle = '#00ffcc'; 
+            ctx.lineWidth = 3;
+            
+            const boxHeight = (lines.length * lineHeight) + 32; // padding
+            const boxY = (canvasHeight / 2) - (boxHeight / 2);
+            
+            ctx.beginPath();
+            if (ctx.roundRect) ctx.roundRect(10, boxY, canvasWidth - 20, boxHeight, 12);
+            else ctx.rect(10, boxY, canvasWidth - 20, boxHeight);
+            ctx.fill(); ctx.stroke();
+        } 
+        //TODO: TRYING TO ADD a rounded border around text, also the size of the border should not cut off text.
+        // else {
+        //     // Panel Background & Border
+        //     ctx.fillStyle = 'rgba(0, 15, 20, 0.85)';
+        //     ctx.strokeStyle = '#ff00ff';
+        //     ctx.lineWidth = 2;
+        //     ctx.fillRect(0, 0, canvas.width, canvas.height);
+        //     // ctx.strokeRect(0, 0, canvas.width, canvas.height);            
+        //     ctx.roundRect(10, -10, canvasWidth - 20, boxHeight, 12);
+        // }
+        
+        // Draw wrapped text
+        ctx.fillStyle = textColor; 
+        ctx.textAlign = 'center'; 
+        ctx.textBaseline = 'middle'; 
+        
+        let currentY = (canvasHeight / 2) - ((lines.length - 1) * lineHeight) / 2;
+        for(let i = 0; i < lines.length; i++) {
+            ctx.fillText(lines[i].trim(), canvasWidth / 2, currentY);
+            currentY += lineHeight;
+        }
+    }
+
+function createLabel_COLUMN(text, sizeOrPos, isGem, isCenter=false) {
+    const canvasWidth = 256;
+    const canvasHeight = 444; // Taller and narrower for column text wrapping
+    const canvas = document.createElement('canvas'); 
+    canvas.width = canvasWidth; 
+    canvas.height = canvasHeight;
+    
+    updateLabelCanvas_COLUMN(canvas, text, isCenter, false, isGem);
+    
+    const tex = new THREE.CanvasTexture(canvas);
+    const spriteMat = new THREE.SpriteMaterial({ map: tex, transparent: true, depthWrite: false });
+    const sprite = new THREE.Sprite(spriteMat);
+    
+    // Tagging it as a column so we know which updater to use if we double-click later
+    sprite.userData = { isLabel: true, text, isCenter, isGem, canvas, tex, isColumn: true };
+    
+    const aspectRatio = canvasWidth / canvasHeight; 
+    let s = isCenter ? sizeOrPos * 4 : sizeOrPos * 5;
+    
+    sprite.scale.set(s * aspectRatio, s, 1); 
+    sprite.position.y = sizeOrPos + 8; 
+    return sprite;
+}
+
+//-------------------------------------END COLUMN DISPLAY
+
+
         function initGallery() {
             scene = new THREE.Scene(); 
             camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 1000);
@@ -592,7 +692,6 @@ Syntax is the architecture of the soul.`;
         }
 
         function renderGallery(TEXT_FORMAT = "TEXT_WIDE") {
-            debugger;
             clearGallery();
             ACTIVE_VIEW_DATA.forEach(data => {
                 const group = new THREE.Group(); group.position.set(data.x, data.y, data.z);
@@ -658,7 +757,15 @@ Syntax is the architecture of the soul.`;
                 }
 
                 const isCenter = data.label === 'aPRYZMa' || data.type === 'COMPOSITE_CONCEPTS';
-                group.add(createLabel(data.label, data.size * 2, data.type?.startsWith('META_'), isCenter));
+                // group.add(createLabel(data.label, data.size * 2, data.type?.startsWith('META_'), isCenter));
+                if(TEXT_FORMAT === "TEXT_COLUMN" && data.type != 'COMPOSITE_CONCEPTS'){
+                    group.add(createLabel_COLUMN(data.label, data.size * 2, data.type?.startsWith('META_'), isCenter));
+                    // group.add(addJudgementVisualization(data)); 
+                    // addJudgementVisualization(judgementSet,selectedObj); 
+                    // group.add(createLabel_COLUMN(data.label, data.size * 2, false, isCenter));
+                }else{
+                    group.add(createLabel(data.label, data.size * 2, false, isCenter));
+                }
                 scene.add(group); orbGroup.push({ group, animData, ...data });
             });
 
