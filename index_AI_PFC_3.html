@@ -1184,17 +1184,17 @@ function createLabel_COLUMN(text, sizeOrPos, isGem, isCenter=false) {
                 const dot = document.getElementById('llmStatusDot'); const text = document.getElementById('llmStatus');
                 dot.className = "status-dot yellow"; text.innerText = "AGENTS THINKING..."; text.style.color = "#facc15";
 
-                let prompt1 = `Task: Generate exactly 10 EXAMPLES for the concept: "SOMETHING_FUNNY".\nConstraint: Output strictly as a single line of comma-separated values (CSV) without description.\nDo not include numbers, newlines, labels, or conversational text.`;
+                let prompt1 = `Task: Generate exactly 3 EXAMPLES for the concept: "SOMETHING_FUNNY".\nConstraint: Output strictly as a single line of comma-separated values (CSV) without description.\nDo not include numbers, newlines, labels, or conversational text.`;
                 let txt1 = await aggregated_TXT(prompt1);
                 
                 let prompt2 = `Task: Review the funny statements. Evaluate them and identify 10 topics addressed or unaddressed, or confused, concept inversion, or dramatic absurdity. Find an aspect that could be funnier, and make it funnier. Limit your response to 20 words.\n\nText to evaluate: "${txt1}"`;
                 let txt2 = await aggregated_TXT(prompt2);
                 
-                let prompt3 = `Task: Add absurdity, to any of prior jokes, just to see what happens next! Extract exactly 10 distinct examples of SOMETHING_FUNNY, with absurdity. Constraint: Output strictly as a single line of comma-separated values (CSV). Do not include numbers, labels, or conversational text.\n\nText: "${txt2}"`;
+                let prompt3 = `Task: Add absurdity, to any of prior jokes, just to see what happens next! Extract exactly 3 distinct examples of SOMETHING_FUNNY, with absurdity. Constraint: Output strictly as a single line of comma-separated values (CSV). Do not include numbers, labels, or conversational text.\n\nText: "${txt2}"`;
                 let txt3 = await aggregated_TXT(prompt3);
                 let concatTXT = [txt1, txt2, txt3];
                 // buildDynamicTopology(focusLabel, csvText, 20);
-                build_Dynamic_Topology_Array(focusLabel, concatTXT, 20);
+                build_Dynamic_Topology_Array(focusLabel, concatTXT, 20); //3D COLUMN LAYOUT
 
                 dot.className = "status-dot green"; text.innerText = "LLM ALIVE"; text.style.color = "#00ffcc";
                 isInferencing = false;
@@ -1434,7 +1434,7 @@ function createLabel_COLUMN(text, sizeOrPos, isGem, isCenter=false) {
             });
 
             ACTIVE_VIEW_DATA = newData;
-            renderGallery("TEXT_COLUMN");
+            renderGallery("TEXT_COLUMN"); //COLUMN LAYOUT in 3D
             
             const target = orbGroup.find(o => o.label === centerLabel.toUpperCase());
             if(target) {
