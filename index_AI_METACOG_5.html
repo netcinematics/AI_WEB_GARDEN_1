@@ -285,33 +285,40 @@
                 <div style="opacity: 0.5;">[SYS] Engine ready.</div>
             </div>
             
-            <!-- Feed Two: Modality 2 (STATIC Metastate, from LOCAL_MARKDOWN) -->
-            <div id="feed_two" class="log-feed tellecto-scrollbar monospace-text" style="display: none; font-weight: bold;">
-                <div style="opacity: 0.5; color:#00ffcc;">[MODALITY_1] HIPPO_CAMPUS - AGENTS :</div>
-                <hr style="width:100%; border-color:steelblue;"/>
-                <span style="color:#3b82f6; font-weight:bold;">"AGENTZ":</span>
-                <div class="data-node" style="border-left: 2px solid #3b82f6; background: rgba(59, 130, 246, 0.05);">
-                    <div style="font-size: 12px; margin-top: 0.5rem; color: #60a5fa;">1) JUDGE_AGENT</div>
-                    <div style="font-size: 12px; margin-top: 0.5rem; color: #60a5fa;">2) SUMMARY_AGENT</div>
-                    <div style="font-size: 12px; margin-top: 0.5rem; color: #60a5fa;">3) LIBRARY_AGENT</div>
+            <!-- Feed Two: Modality 2 (Metastate / AGENTZ) -->
+            <div id="feed_two" class="log-feed tellecto-scrollbar monospace-text" style="display: none;">
+                <div style="opacity: 0.5;">[MODALITY_1] HIPPO_CAMPUS METASTATE - AGENTZ.</div>
+                <div class="flex gap-2 mb-2 mt-2">
+                    <button onclick="fetchMemory('GEM')" style="background:rgba(250,204,21,0.2); color:#facc15; border:1px solid #facc15; font-weight:bold; padding:0.25rem 0.75rem; border-radius:0.25rem; cursor:pointer;">GEM</button>
+                    <button onclick="fetchMemory('JUDGE')" style="background:rgba(0,255,204,0.2); color:#00ffcc; border:1px solid #00ffcc; font-weight:bold; padding:0.25rem 0.75rem; border-radius:0.25rem; cursor:pointer;">JUDGE</button>
+                </div>
+                <div id="agentz_content" class="data-node" style="border-left: 2px solid #3b82f6; background: rgba(59, 130, 246, 0.05); white-space: pre-wrap;">
+                    <span style="color:#3b82f6; font-weight:bold;">[VIEW 2] Dynamic Metastate Visualization Channel</span>
+                    <div style="font-size: 12px; margin-top: 0.5rem; color: #60a5fa;">Awaiting IndexedDB sync protocols... Select an AGENT to load memory.</div>
                 </div>
             </div>
 
-            <!-- Feed Three: Modality 3 (Pruning) -->
-            <div id="feed_three" class="log-feed tellecto-scrollbar monospace-text" style="display: none; font-weight: bold;">
-                <div style="opacity: 0.5;">[MODALITY_2] HIPPO_CAMPUS - "METASTATE" : </div>
-                <div class="data-node" style="border-left: 2px solid #ff00ff; background: rgba(255, 0, 255, 0.05);">
-                    <span style="color:#ff00ff; font-weight:bold;">[VIEW 3] "ATOMZ",  "AXIOMZ", & AGENTZ = "METASTATE". </span>
-                    <div style="font-size: 12px; margin-top: 0.5rem; color: #f472b6;">Editable Memories.</div>
+            <!-- Feed Three: Modality 3 (Pruning / ATOMZ) -->
+            <div id="feed_three" class="log-feed tellecto-scrollbar monospace-text" style="display: none;">
+                <div style="opacity: 0.5;">[MODALITY_2] UX PRUNING ENGINE - ATOMZ.</div>
+                <div class="flex gap-2 mb-2 mt-2">
+                    <button onclick="fetchMemory('ATOMZ')" style="background:rgba(255,0,255,0.2); color:#ff00ff; border:1px solid #ff00ff; font-weight:bold; padding:0.25rem 0.75rem; border-radius:0.25rem; cursor:pointer;">ATOMZ</button>
+                </div>
+                <div id="atomz_content" class="data-node" style="border-left: 2px solid #ff00ff; background: rgba(255, 0, 255, 0.05); white-space: pre-wrap;">
+                    <span style="color:#ff00ff; font-weight:bold;">[VIEW 3] Concept Editing & Pruning Interface</span>
+                    <div style="font-size: 12px; margin-top: 0.5rem; color: #f472b6;">Awaiting structural definitions... Select ATOMZ to load memory.</div>
                 </div>
             </div>
 
-            <!-- Feed Four: Modality 4 (Reference) -->
-            <div id="feed_four" class="log-feed tellecto-scrollbar monospace-text" style="display: none; font-weight: bold;">
-                <div style="opacity: 0.5;">[MODALITY_4] HIPPO_CAMPUS - DYNAMICZ :</div>
-                <div class="data-node" style="border-left: 2px solid #facc15; background: rgba(250, 204, 21, 0.05);">
-                    <span style="color:#facc15; font-weight:bold;">[VIEW 4] "DYNAMICZ"</span>
-                    <div style="font-size: 12px; margin-top: 0.5rem; color: #fde047;">Awaiting cross-modal integrations...</div>
+            <!-- Feed Four: Modality 4 (Reference / AXIOMZ) -->
+            <div id="feed_four" class="log-feed tellecto-scrollbar monospace-text" style="display: none;">
+                <div style="opacity: 0.5;">[MODALITY_3] DYNAMIC REFERENCE - AXIOMZ.</div>
+                <div class="flex gap-2 mb-2 mt-2">
+                    <button onclick="fetchMemory('AXIOMZ')" style="background:rgba(250,204,21,0.2); color:#facc15; border:1px solid #facc15; font-weight:bold; padding:0.25rem 0.75rem; border-radius:0.25rem; cursor:pointer;">AXIOMZ</button>
+                </div>
+                <div id="axiomz_content" class="data-node" style="border-left: 2px solid #facc15; background: rgba(250, 204, 21, 0.05); white-space: pre-wrap;">
+                    <span style="color:#facc15; font-weight:bold;">[VIEW 4] HIPPO_CAMPUS External Reference Hub</span>
+                    <div style="font-size: 12px; margin-top: 0.5rem; color: #fde047;">Awaiting cross-modal integrations... Select AXIOMZ to load memory.</div>
                 </div>
             </div>
         </div>
@@ -682,6 +689,33 @@
             }
         }
         
+        
+        async function fetchMemory(type) {
+            let url = "";
+            let targetId = "";
+            
+            if (type === 'GEM') { url = "./markdown_brain/GEM_PERSONA_1.md"; targetId = "agentz_content"; }
+            else if (type === 'JUDGE') { url = "./markdown_brain/AGENTZ_1.md"; targetId = "agentz_content"; }
+            else if (type === 'ATOMZ') { url = "./markdown_brain/ATOMZ_1.md"; targetId = "atomz_content"; }
+            else if (type === 'AXIOMZ') { url = "./markdown_brain/AXIOMZ_1.md"; targetId = "axiomz_content"; }
+
+            const targetEl = document.getElementById(targetId);
+            if (!targetEl) return;
+            
+            targetEl.innerHTML = `<span style="color:#00ffcc;">Loading ${type} vector from ${url}...</span>`;
+            
+            try {
+                const response = await fetch(url);
+                if (!response.ok) throw new Error("File not found in environment.");
+                const text = await response.text();
+                targetEl.innerHTML = `<span style="color:#ffffff;">${text}</span>`;
+                addLog(`[MEMORY_IO] Successfully loaded ${type} vector.`, 'metastate');
+            } catch (err) {
+                targetEl.innerHTML = `<span style="color:#f87171;">[ERROR] Could not load ${url}.</span>\n\n<span style="color:#d1fae5;">Simulated Content for ${type}:\n---\nVector Data Loaded...\nNode count: ${Math.floor(Math.random() * 100) + 10}\nStatus: Operational\nModality: Bio-Mimicry / Hippo_Campus\n---</span>`;
+                addLog(`[MEMORY_IO] Simulated fallback for ${type} vector.`, 'info');
+            }
+        }
+
         function addLog(msg, type = 'info') {
             const div = document.createElement('div'); div.className = 'data-node border-l-2';
             const timestamp = new Date().toLocaleTimeString([], { hour12: false, hour: '2-digit', minute: '2-digit', second: '2-digit', fractionalSecondDigits: 2 });

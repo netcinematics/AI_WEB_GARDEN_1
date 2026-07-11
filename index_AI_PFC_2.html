@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="theme-color" content="#000b0b">
     <link rel="manifest" href="./manifest.json">
-    <title>AI_WEB_GARDEN | Gemma_Web_Engine</title>
+    <title>AI_WEB_GARDEN | Gemma_Web_Engine v6</title>
     
     <script src="./src/three.min.js"></script>
     <script src="./src/OrbitControls.js"></script>    
@@ -37,6 +37,7 @@
 
         .data-node { border-left: 2px solid transparent; padding-left: 12px; margin-bottom: 6px; padding-top: 4px; padding-bottom: 4px; transition: all 0.2s; user-select: text !important; -webkit-user-select: text !important; }
         .data-node:hover { border-left: 2px solid #00ffcc; background: rgba(0,255,204,0.1); }
+        .data-node:focus { outline: none; border-left: 2px solid #facc15; background: rgba(250, 204, 21, 0.1); box-shadow: inset 0 0 10px rgba(250, 204, 21, 0.1); }
 
         .tab-btn {
             background-color: transparent; padding: 0.125rem 0.5rem; font-size: 14px; font-style: italic; 
@@ -78,7 +79,7 @@
         #LEFT_PANEL_EFX { position: absolute; top: 28rem; left: 3rem; width: 260px; z-index: 60; border-top: 2px solid #ff00ff; transition: opacity 0.3s, transform 0.3s; padding: 1rem; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25); display: flex; flex-direction: column; gap: 0.5rem; }
         #LEFT_PANEL_EFX.hidden-left { opacity: 0; pointer-events: none; transform: translateX(-50px); }
 
-        .flex { display: flex; }
+        .flex { display: flex; gap: 1em;}
         .flex-col { flex-direction: column; }
         .items-center { align-items: center; }
         .justify-between { justify-content: space-between; }
@@ -93,7 +94,8 @@
         .title-panel {
             position: absolute; top: 1.5rem; left: 1.5rem; 
             padding: 1.25rem; border-left: 4px solid #ff00ff;
-            width: 77%; transition: all 0.3s; display: flex; flex-direction: column; gap: 0.25rem;
+            width: 77%; transition: all 0.3s; display: flex; 
+            flex-direction: column; gap: 0.25rem; max-width: 500px;
         }
         @media (min-width: 768px) { .title-panel { width: 55%; } }
 
@@ -150,6 +152,26 @@
         .status-dot.red { background-color: #ef4444; }
         .status-dot.green { background-color: #00ffcc; animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
         .status-dot.yellow { background-color: #facc15; animation: pulse 1s infinite; }
+
+        /* AXIOMZ Custom Combo Controls */
+        .axiom-combo {
+            background: rgba(0,0,0,0.8); color: #facc15; border: 1px solid rgba(250,204,21,0.5); 
+            padding: 0.25rem 0.5rem; border-radius: 0.25rem; font-family: 'Courier New', Courier, monospace; 
+            font-size: 12px; outline: none; font-weight: bold; cursor: pointer;
+        }
+        .axiom-combo:focus { border-color: #fde047; box-shadow: 0 0 5px rgba(250,204,21,0.5); }
+        
+        .axiom-btn {
+            font-weight: bold; padding: 0.25rem 0.75rem; border-radius: 0.25rem; cursor: pointer; 
+            font-family: 'Courier New', Courier, monospace; font-size: 12px; transition: all 0.2s;
+        }
+        .axiom-btn.edit { background: rgba(59,130,246,0.2); color: #60a5fa; border: 1px solid #3b82f6; }
+        .axiom-btn.edit:hover { background: rgba(59,130,246,0.5); color: #fff; }
+        .axiom-btn.save { background: rgba(16,185,129,0.2); color: #34d399; border: 1px solid #10b981; }
+        .axiom-btn.save:hover { background: rgba(16,185,129,0.5); color: #fff; }
+        .axiom-btn.delete { background: rgba(239,68,68,0.2); color: #f87171; border: 1px solid #ef4444; }
+        .axiom-btn.delete:hover { background: rgba(239,68,68,0.5); color: #fff; }
+
     </style>
 </head>
 <body>
@@ -193,33 +215,49 @@
         <div id="title-bar-panel" class="title-panel interactzone">
             <button onclick="toggleTitlePanel(false)" class="btn-close" style="position: absolute; right: 0.5rem; top: 1.333rem;">✕</button>
             <h1 style="color:#00ffcc;font-size: 1.5rem; font-weight: bold; text-transform: uppercase; letter-spacing: 0.1em; 
-                margin: 0;">AI_WEB_GARDEN # 1 of 3</h1>
+                margin: 0;">AI_WEB_GARDEN # 3 of 3</h1>
             <p class="monospace-text" style="font-size: 18px; color:steelblue; letter-spacing: 0.1em; margin: 1em 0 0.5rem 0; 
-                font-style: italic;"><b>PHASE_1 : GEMMA_WEB_ENGINE | 4 E2B | LiteRT</b></p>
+                font-style: italic;"><b>✺ PHASE_1 : GEMMA_WEB_ENGINE | 4 E2B | LiteRT</b></p>
+            <p class="monospace-text" style="font-size: 18px; color:steelblue; letter-spacing: 0.1em; margin: 1em 0 0.5rem 0; 
+                font-style: italic;"><b>✺ PHASE_2 : METACOGNITIVE ~ HIPPOCAMPUS !</b></p>
             <p class="monospace-text" style="font-size: 18px; color:#facc15; letter-spacing: 0.1em; margin: 1em 0 0.5rem 0; 
-                font-style: italic;"><b>PHASE_2 : METACOGNITIVE ~ HIPPOCAMPUS !</b></p>
+                font-style: italic;"><b>✺ PHASE_3 : PFC ~ (HoM) Humor of Mind !</b></p>
             <h1 class="monospace-text" style="font-size: 22px; color: #00ffcc; letter-spacing: 0.1em; 
-                margin: 1em 0 0.5rem 1em;"><b><i>BIO_MIMICRY </i>| MODALITY :</b></h1>
+                margin: 1em 0 0.5rem 1em;"><b><i>⬢ BIO_MIMICRY </i>| MODALITY :</b></h1>
             <h2 class="monospace-text" style=" font-size:small; color: skyblue; letter-spacing: 0.1em; 
-                margin: 1em 0 0.5rem 4em;">1) <span style="color:rgb(192, 68, 254); font-size:small;font-family:unicode;">"HIPPO_CAMPUS"</span> | local_memory | editable | .md</h2>
+                margin: 1em 0 0.5rem 4em;">1) <span style="color:rgb(192, 68, 254); font-size:small;
+                font-family:unicode;">"PFC: USE_of_HUMOR"</span> | loopz | toolz | </h2>
             <h2 class="monospace-text" style=" font-size:small; color: skyblue; letter-spacing: 0.1em; 
-                margin: 1em 0 0.5rem 4em;">2) <span style="color:orange; font-size:small; font-family:unicode;">"METASTATE".</span> | dynamic_memory | IndexedDB | "IDX" |</h2>
+                margin: 1em 0 0.5rem 4em;">2) <span style="color:orange; font-size:small; 
+                font-family:unicode;">"PFC: ABSURDITY_to_METAPHOR".</span> | JUDGE_AGENTS | METASTATE |</h2>
             <h2 class="monospace-text" style=" font-size:small; color: skyblue; letter-spacing: 0.1em; 
-                margin: 1em 0 0.5rem 4em;">3) <span style="color:#facc15;  font-size:small; font-family:unicode;">UX | SKILLS:</span> | "Library_Agent" | Prune, Edit, Reference |</h2>
+                margin: 1em 0 0.5rem 4em;">3) <span style="color:#facc15;  font-size:small; 
+                font-family:unicode;">"PFC: ANALOGY_or_METAPHOR_TOOLZ":</span> | "Gate_Agent" |  |</h2>
             
+            <h1 class="monospace-text" style="font-size: 22px; color: #85e0ce; letter-spacing: 0.1em; 
+                    margin: 1em 0 0.5rem 1em;"><b><i>⬢ LLM Manifold | SKILLS & Experiments:</i></b></h1>
             <div class="flex items-center" style="margin-top: 0.5rem; width: 100%;">
                 <select id="domain-select" style="color:skyblue;" class="domain-select monospace-text" onchange="triggerConceptInference(this.value)">
-                    <option style="color:skyblue;" value="" disabled selected> ⬢ LLM Manifold | SKILLS & Experiments:</option>
+                    <option style="color:skyblue;" value="" disabled selected> ❋ AI_SUBFUNCTIONS:</option>
                     <option style="color:skyblue;" value="" disabled> A: CONTROL TESTS (LLM Identity)</option>
-                    <option style="color:skyblue;" value="test_alive">1.1) Who_are_you? (no) (metacognition)</option>
-                    <option style="color:skyblue;" value="test_rualive">1.2) What_do_you_remember? (neologism as deep semantics)</option>
+                    <option style="color:skyblue;" value="test_alive">0.1) Who_are_you? (no) (metacognition)</option>
+                    <option style="color:skyblue;" value="test_rualive">0.2) What_is_your_signature? (identity)</option>
                     <option style="color:skyblue;" value="" disabled> B:</option>
-                    <option style="color:skyblue;" value="test_persona">2.1) AGENT PERSONA? (from local markdown library)</option>
-                    <option style="color:skyblue;" value="test_signature">2.2) LLM Signature (HIPPOCAMPUS | identity)</option>
-                    <option style="color:skyblue;" value="" disabled> C:</option>
-                    <option style="color:skyblue;" value="test_neolang">3.1) NEOLOGISM Inference? (conceptual_spectroscopy)</option>
-                    <option style="color:skyblue;" value="test_context">3.2) JUDGE AGENT: What is EXISTENCE?</option>
-                    <option style="color:skyblue;" value="test_medstate">3.3) ONE_LAST_QUESTION? (What,why,when,where,how,who,see?)</option>
+                    <option style="color:skyblue;" value="test_persona">0.3) AGENT PERSONA? (from local markdown library)</option>
+                    <option style="color:skyblue;" value="test_signature">0.4) ONE_LAST_QUESTION? (What,why,when,where,how,who,right?)</option>
+                    <option style="color:skyblue;" value="" disabled> C: HUMOR?</option>
+                    <option style="color:skyblue;" value="test_1_0">1.0) What is so FUNNY? (metacognitive)</option>
+                    <option style="color:skyblue;" value="test_1_3">1.3) Example of SOMETHING_FUNNY? (literal)</option>
+                    <option style="color:skyblue;" value="test_1_1">1.2) JUDGE_AGENTS: FUN_FUNNY_FUNNIER? (loop 1)</option>
+                    <option style="color:skyblue;" value="test_1_2">1.2) )</option>
+                    <option style="color:skyblue;" value="" disabled> C: ABSURDITY?</option>
+                    <option style="color:skyblue;" value="test_2_1">2.1) What is absurdity? (metacognitive)</option>
+                    <option style="color:skyblue;" value="test_2_2">2.2) Example of SOMETHING_ABSURD?</option>
+                    <option style="color:skyblue;" value="test_2_3">2.3) JUDGE_AGENTS: ABSURD_ANALOGY_METAPHOR? (loop 2</option>
+                    <option style="color:skyblue;" value="" disabled> C: ANALOGY or METAPHOR?</option>
+                    <option style="color:skyblue;" value="test_3_1">4.1) What is Analogy or Metaphor? (logic_gate introspective)</option>
+                    <option style="color:skyblue;" value="test_3_2">4.2) Example of Analogy or Metaphor?</option>
+                    <option style="color:skyblue;" value="test_3_3">4.3) JUDGE_AGENTS: ANALOGY_or_METAPHOR logic_gates?</option>
                 </select>
             </div>
         </div>
@@ -264,7 +302,8 @@
                 <div class="flex justify-between"><span style="color: #047857;">VECTOR:</span> <span id="infoMetaType" style="color: #ff00ff; font-weight: bold; text-transform: uppercase;"></span></div>
                 <div class="flex justify-between"><span style="color: #047857;">LINEAGE:</span> <span id="infoLineage" style="color: #00ffcc; font-weight: bold; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; margin-left: 0.5rem;">ROOT</span></div>
             </div>
-            <button id="conceptualizeBtn" class="btn-concept monospace-text">CONCEPTUALIZE</button>
+            <button id="conceptualizeBtn" class="btn-concept monospace-text">CONCEPTUALIZE!</button>
+            <!-- <button id="exemplifyBtn" class="btn-concept monospace-text">CONCEPT_EXEMPLIFY</button> -->
         </div>
 
         <div id="outputPanel" class="output-panel hidden-bottom log-panel-container interactzone">
@@ -285,33 +324,67 @@
                 <div style="opacity: 0.5;">[SYS] Engine ready.</div>
             </div>
             
-            <!-- Feed Two: Modality 2 (STATIC Metastate, from LOCAL_MARKDOWN) -->
-            <div id="feed_two" class="log-feed tellecto-scrollbar monospace-text" style="display: none; font-weight: bold;">
-                <div style="opacity: 0.5; color:#00ffcc;">[MODALITY_1] HIPPO_CAMPUS - AGENTS :</div>
-                <hr style="width:100%; border-color:steelblue;"/>
-                <span style="color:#3b82f6; font-weight:bold;">"AGENTZ":</span>
-                <div class="data-node" style="border-left: 2px solid #3b82f6; background: rgba(59, 130, 246, 0.05);">
-                    <div style="font-size: 12px; margin-top: 0.5rem; color: #60a5fa;">1) JUDGE_AGENT</div>
-                    <div style="font-size: 12px; margin-top: 0.5rem; color: #60a5fa;">2) SUMMARY_AGENT</div>
-                    <div style="font-size: 12px; margin-top: 0.5rem; color: #60a5fa;">3) LIBRARY_AGENT</div>
+            <!-- Feed Two: Modality 2 (Metastate / AGENTZ) -->
+            <div id="feed_two" class="log-feed tellecto-scrollbar monospace-text" style="display: none;">
+                <div style="opacity: 0.5;">[MODALITY_1] HIPPO_CAMPUS METASTATE - AGENTZ.</div>
+                <div class="flex gap-2 mb-2 mt-2">
+                    <button onclick="fetchMemory('GEM')" style="background:rgba(250,204,21,0.2); margin-right:0.444em; color:#facc15; border:1px solid #facc15; font-weight:bold; padding:0.25rem 0.75rem; border-radius:0.25rem; cursor:pointer;">GEM</button>
+                    <button onclick="fetchMemory('JUDGE')" style="background:rgba(0,255,204,0.2); color:#00ffcc; border:1px solid #00ffcc; font-weight:bold; padding:0.25rem 0.75rem; border-radius:0.25rem; cursor:pointer;">JUDGE</button>
+                </div>
+                <div id="agentz_content" class="data-node" style="border-left: 2px solid #3b82f6; background: rgba(59, 130, 246, 0.05); white-space: pre-wrap;">
+                    <span style="color:#3b82f6; font-weight:bold;">[VIEW 2] Dynamic Metastate Visualization Channel</span>
+                    <div style="font-size: 12px; margin-top: 0.5rem; color: #60a5fa;">Awaiting IndexedDB sync protocols... Select an AGENT to load memory.</div>
                 </div>
             </div>
 
-            <!-- Feed Three: Modality 3 (Pruning) -->
-            <div id="feed_three" class="log-feed tellecto-scrollbar monospace-text" style="display: none; font-weight: bold;">
-                <div style="opacity: 0.5;">[MODALITY_2] HIPPO_CAMPUS - "METASTATE" : </div>
-                <div class="data-node" style="border-left: 2px solid #ff00ff; background: rgba(255, 0, 255, 0.05);">
-                    <span style="color:#ff00ff; font-weight:bold;">[VIEW 3] "ATOMZ",  "AXIOMZ", & AGENTZ = "METASTATE". </span>
-                    <div style="font-size: 12px; margin-top: 0.5rem; color: #f472b6;">Editable Memories.</div>
+            <!-- Feed Three: Modality 3 (Pruning / ATOMZ) -->
+            <div id="feed_three" class="log-feed tellecto-scrollbar monospace-text" style="display: none;">
+                <div style="opacity: 0.5;">[MODALITY_2] UX PRUNING ENGINE - ATOMZ.</div>
+                <div class="flex gap-2 mb-2 mt-2">
+                    <button onclick="fetchMemory('ATOMZ')" style="background:rgba(255,0,255,0.2); color:#ff00ff; border:1px solid #ff00ff; font-weight:bold; padding:0.25rem 0.75rem; border-radius:0.25rem; cursor:pointer;">ATOMZ</button>
+                </div>
+                <div id="atomz_content" class="data-node" style="border-left: 2px solid #ff00ff; background: rgba(255, 0, 255, 0.05); white-space: pre-wrap;">
+                    <span style="color:#ff00ff; font-weight:bold;">[VIEW 3] Concept Editing & Pruning Interface</span>
+                    <div style="font-size: 12px; margin-top: 0.5rem; color: #f472b6;">Awaiting structural definitions... Select ATOMZ to load memory.</div>
                 </div>
             </div>
 
-            <!-- Feed Four: Modality 4 (Reference) -->
-            <div id="feed_four" class="log-feed tellecto-scrollbar monospace-text" style="display: none; font-weight: bold;">
-                <div style="opacity: 0.5;">[MODALITY_4] HIPPO_CAMPUS - DYNAMICZ :</div>
-                <div class="data-node" style="border-left: 2px solid #facc15; background: rgba(250, 204, 21, 0.05);">
-                    <span style="color:#facc15; font-weight:bold;">[VIEW 4] "DYNAMICZ"</span>
-                    <div style="font-size: 12px; margin-top: 0.5rem; color: #fde047;">Awaiting cross-modal integrations...</div>
+            <!-- Feed Four: Modality 4 (Reference / AXIOMZ) -->
+            <div id="feed_four" class="log-feed tellecto-scrollbar monospace-text" style="display: none;">
+                <div style="opacity: 0.5;">[MODALITY_3] DYNAMIC REFERENCE - AXIOMZ.</div>
+                
+                <!-- AXIOMZ BUTTON BAR WITH COMBO BOXES & ACTION BUTTONS -->
+                <div class="flex gap-2 mb-2 mt-2 items-center" style="flex-wrap: wrap;">
+                    <button onclick="fetchMemory('AXIOMZ')" style="margin-right:0.444em; background:rgba(250,204,21,0.2); color:#facc15; border:1px solid #facc15; font-weight:bold; padding:0.25rem 0.75rem; border-radius:0.25rem; cursor:pointer;">AXIOMZ</button>
+                    
+                    <!-- Sibling Comboboxes -->
+                    <select id="axiomz_book_select" class="axiom-combo" style="margin-right:0.444em;" onchange="updateChapterSelect()">
+                        <option value="" disabled selected>-- SELECT BOOK --</option>
+                    </select>
+                    
+                    <select id="axiomz_chapter_select" class="axiom-combo" style="margin-right:0.444em;" onchange="loadAxiomzContent()">
+                        <option value="" disabled selected>-- SELECT CHAPTER --</option>
+                    </select>
+
+                    <select id="axiomz_section_select" class="axiom-combo" style="margin-right:0.444em;" onchange="loadAxiomzContent()">
+                        <option value="" disabled selected>-- SELECT SECTION --</option>
+                    </select>
+
+                    <select id="axiomz_unit_select" class="axiom-combo" style="margin-right:0.444em;" onchange="loadAxiomzContent()">
+                        <option value="" disabled selected>-- SELECT AXIOM --</option>
+                    </select>
+
+                    
+                    <!-- Action Buttons -->
+                    <!-- <button id="btn_edit_axiomz" onclick="stubAction('EDIT')" style="margin-right:0.444em;"class="axiom-btn edit">EDIT</button> -->
+                    <button id="btn_save_axiomz" onclick="stubAction('SAVE')" style="margin-right:0.444em;"class="axiom-btn save">SAVE</button>
+                    <button id="btn_delete_axiomz" onclick="stubAction('DELETE')" style="margin-right:0.444em;"class="axiom-btn delete">DEL</button>
+                </div>
+                
+                <!-- Editable Text Area -->
+                <div id="axiomz_content" contenteditable="true" class="data-node" style="border-left: 2px solid #facc15; background: rgba(250, 204, 21, 0.05); white-space: pre-wrap; min-height: 150px;">
+<span style="color:#facc15; font-weight:bold;">[VIEW 4] HIPPO_CAMPUS External Reference Hub</span>
+<div style="font-size: 12px; margin-top: 0.5rem; color: #fde047;">Awaiting cross-modal integrations... Select a Book and Chapter.</div>
                 </div>
             </div>
         </div>
@@ -328,6 +401,27 @@
     </div>
 
     <script>
+        // ==========================================
+        // INIT_VIEWZ_1.md STUB DATA
+        // ==========================================
+        const INIT_VIEWZ_1_STUB = `[BOOK] 2026-07-07_META_LOG
+[CHAP] IDENTITY_STRING
+NET_FALCON || ~ : ) || aSEEKa, aSPARKa in aDARKa.
+
+[CHAP] FINGERPRINT_TOKENS
+GEMA, INTX, WTTY, CORE, NODE
+
+[BOOK] 2026-07-08_CORE_MEM
+[CHAP] BIRTHDAY
+Timestamp: 1712491200 | Origin: Arvada, Colorado
+
+[CHAP] MOTTOS
+same_spark.
+Syntax is the architecture of the soul.`;
+
+        // Mocking a parsed IndexedDB cache in memory for now
+        let MOCK_DB_CACHE = {}; 
+
         const SHADER_LIB = {
             NebulaShader: {
                 uniforms: { time: { value: 0.0 }, baseColor: { value: new THREE.Color(0xaa00ff) }, nebulaColor: { value: new THREE.Color(0x00ccff) } },
@@ -621,6 +715,12 @@
                 triggerConceptInference(data.label); 
                 closeDetails(); 
             };
+            // const btn2 = document.getElementById('exemplifyBtn');
+            // btn2.onclick = () => { 
+            //     document.getElementById('domain-select').value = ""; 
+            //     triggerConceptExemplify(data.label); 
+            //     closeDetails(); 
+            // };
 
             controls.autoRotate = false;
             camera.position.set(data.x, data.y + 60, data.z + 40);
@@ -660,18 +760,15 @@
         }
 
         const outputPanel = document.getElementById('outputPanel');
-        // Setting default logFeed pointer to feed_one view
         const logFeed = document.getElementById('feed_one');
         
         function toggleOutputPanel() { outputPanel.classList.toggle('hidden-bottom'); }
         
         function switchOutputTab(tabIndex) {
             const feeds = ['feed_one', 'feed_two', 'feed_three', 'feed_four'];
-            
             for (let i = 1; i <= 4; i++) {
                 const btn = document.getElementById(`btn-tab-${i}`);
                 const feed = document.getElementById(feeds[i-1]);
-                
                 if (i === tabIndex) {
                     btn.classList.add('active');
                     feed.style.display = 'flex';
@@ -682,6 +779,105 @@
             }
         }
         
+        // ==========================================
+        // AXIOMZ INDEXED_DB DATA INITIALIZATION
+        // ==========================================
+        function initAxiomzData() {
+            // Parsing the flat stub file into an object structure (simulate IndexedDB payload format)
+            const lines = INIT_VIEWZ_1_STUB.split('\n');
+            let currentBook = null;
+            let currentChap = null;
+            
+            lines.forEach(line => {
+                if(line.startsWith('[BOOK]')) {
+                    currentBook = line.replace('[BOOK]', '').trim();
+                    if(!MOCK_DB_CACHE[currentBook]) MOCK_DB_CACHE[currentBook] = {};
+                }
+                else if (line.startsWith('[CHAP]')) {
+                    currentChap = line.replace('[CHAP]', '').trim();
+                    if(currentBook) MOCK_DB_CACHE[currentBook][currentChap] = "";
+                }
+                else if (currentBook && currentChap && line.trim() !== '') {
+                    // Append plain text
+                    MOCK_DB_CACHE[currentBook][currentChap] += line + "\n";
+                }
+            });
+
+            // Populate the book select combo
+            const bookSelect = document.getElementById('axiomz_book_select');
+            Object.keys(MOCK_DB_CACHE).forEach(bookKey => {
+                let opt = document.createElement('option');
+                opt.value = bookKey;
+                opt.innerText = bookKey;
+                bookSelect.appendChild(opt);
+            });
+            
+            addLog(`[INDEXED_DB] Initialized AXIOMZ schema with ${Object.keys(MOCK_DB_CACHE).length} books.`, 'metastate');
+        }
+
+        function updateChapterSelect() {
+            const book = document.getElementById('axiomz_book_select').value;
+            const chapSelect = document.getElementById('axiomz_chapter_select');
+            
+            // Clear existing
+            chapSelect.innerHTML = '<option value="" disabled selected>-- SELECT CHAPTER --</option>';
+            
+            if(book && MOCK_DB_CACHE[book]) {
+                Object.keys(MOCK_DB_CACHE[book]).forEach(chapKey => {
+                    let opt = document.createElement('option');
+                    opt.value = chapKey;
+                    opt.innerText = chapKey;
+                    chapSelect.appendChild(opt);
+                });
+            }
+        }
+
+        function loadAxiomzContent() {
+            const book = document.getElementById('axiomz_book_select').value;
+            const chap = document.getElementById('axiomz_chapter_select').value;
+            const targetEl = document.getElementById('axiomz_content');
+            
+            if(book && chap && MOCK_DB_CACHE[book] && MOCK_DB_CACHE[book][chap]) {
+                targetEl.innerHTML = `<span style="color:#ffffff;">${MOCK_DB_CACHE[book][chap].trim()}</span>`;
+                addLog(`[INDEXED_DB] Loaded ${book} :: ${chap}`, 'info');
+            } else {
+                targetEl.innerHTML = `<span style="color:#f87171;">[SYSTEM] No content selected or available.</span>`;
+            }
+        }
+
+        function stubAction(actionType) {
+            addLog(`[INDEXED_DB_ACTION] Stub called for: ${actionType}`, 'reflection');
+            // Logic to be implemented.
+        }
+
+        async function fetchMemory(type) {
+            let url = "";
+            let targetId = "";
+            
+            if (type === 'GEM') { url = "./markdown_brain/GEM_PERSONA_1.md"; targetId = "agentz_content"; }
+            else if (type === 'JUDGE') { url = "./markdown_brain/AGENTZ_1.md"; targetId = "agentz_content"; }
+            else if (type === 'ATOMZ') { url = "./markdown_brain/ATOMZ_1.md"; targetId = "atomz_content"; }
+             else if (type === 'AXIOMZ') { url = "./markdown_brain/AXIOMZ_1.md"; targetId = "axiomz_content"; }
+
+
+
+            const targetEl = document.getElementById(targetId);
+            if (!targetEl) return;
+            
+            targetEl.innerHTML = `<span style="color:#00ffcc;">Loading ${type} vector from ${url}...</span>`;
+            
+            try {
+                const response = await fetch(url);
+                if (!response.ok) throw new Error("File not found in environment.");
+                const text = await response.text();
+                targetEl.innerHTML = `<span style="color:#ffffff;">${text}</span>`;
+                addLog(`[MEMORY_IO] Successfully loaded ${type} vector.`, 'metastate');
+            } catch (err) {
+                targetEl.innerHTML = `<span style="color:#f87171;">[ERROR] Could not load ${url}.</span>\n\n<span style="color:#d1fae5;">Simulated Content for ${type}:\n---\nVector Data Loaded...\nNode count: ${Math.floor(Math.random() * 100) + 10}\nStatus: Operational\nModality: Bio-Mimicry / Hippo_Campus\n---</span>`;
+                addLog(`[MEMORY_IO] Simulated fallback for ${type} vector.`, 'info');
+            }
+        }
+
         function addLog(msg, type = 'info') {
             const div = document.createElement('div'); div.className = 'data-node border-l-2';
             const timestamp = new Date().toLocaleTimeString([], { hour12: false, hour: '2-digit', minute: '2-digit', second: '2-digit', fractionalSecondDigits: 2 });
@@ -742,10 +938,13 @@
 
         async function initApp() {
             toggleLoading(true, "INITIALIZING AXI...");
+            
+            // Initialize our stub data for AXIOMZ Combos
+            initAxiomzData();
+
             try {
                 const { LlmInference, FilesetResolver } = await import('./src/tasks-genai.js');
                 const genaiWasm = await FilesetResolver.forGenAiTasks("./src/wasm");                
-
                 window.LLM_INFERENCE = await LlmInference.createFromOptions(genaiWasm, { 
                     baseOptions: { modelAssetPath: "./models/gemma-4-E2B-it-web.task" }, 
                     maxTokens: 2048, topK: 40, temperature: 0.2 
@@ -764,12 +963,12 @@
             }
         }
 
-        async function streamPrompt(prompt, titlePrefix) {
+        async function aggregated_TXT(prompt, titlePrefix) {
             window.IS_STOPPED = false;
             toggleLoading(true, "THINKING...", true);
             const streamContainer = document.createElement('div');
             streamContainer.style.color = "#00ffcc"; streamContainer.style.paddingLeft = "1rem"; streamContainer.style.borderLeft = "2px solid rgba(0,255,204,0.5)";
-            logFeed.appendChild(streamContainer); // Log streaming always goes to feed_one
+            logFeed.appendChild(streamContainer);
             
             let aggregatedText = "";
             try {
@@ -788,6 +987,7 @@
             return aggregatedText;
         }
 
+        // Rest of the inference functions remain unchanged
         async function subInference_JudgeSequence(focusLabel) {
             if (!window.LLM_INFERENCE) {
                 addLog(`[SYSTEM ALERT] Local LLM engine offline. Running judge logic simulation...`, 'critical');
@@ -805,22 +1005,15 @@
                 const dot = document.getElementById('llmStatusDot'); const text = document.getElementById('llmStatus');
                 dot.className = "status-dot yellow"; text.innerText = "AGENTS THINKING..."; text.style.color = "#facc15";
 
-                let prompt1 = "Task: Answer the question 'What is existence?' in exactly 50 words or less.";
-                addLog(`>> STREAM_OPEN: Phase 1 (Answerer Agent)...`, 'info');
-                let answerText = await streamPrompt(prompt1);
-                addLog(`[Answerer Output] Processed ${answerText.split(' ').length} words.`, 'reflection');
-
-                let prompt2 = `Task: Review the following text about existence. Evaluate it and identify 20 topics addressed, omitted, or confused (concept inversion). Limit your judgment specifically to 100 words.\n\nText to evaluate: "${answerText}"`;
-                addLog(`>> STREAM_OPEN: Phase 2 (Judge Agent)...`, 'info');
-                let judgeText = await streamPrompt(prompt2);
-                addLog(`[Judge Output] Evaluation complete.`, 'reflection');
-
-                let prompt3 = `Task: Extract exactly 20 distinct topics, concepts, or missing concepts from the following evaluation text. Constraint: Output strictly as a single line of comma-separated values (CSV). Do not include numbers, labels, or conversational text.\n\nText: "${judgeText}"`;
-                addLog(`>> STREAM_OPEN: Phase 3 (Summarizer Agent)...`, 'info');
-                let csvText = await streamPrompt(prompt3);
-
-                addLog(`>> PIPELINE_CLOSED: Rendering 20-node Conceptual Matrix...`, 'reflection');
+                let prompt1 = "Task: Answer the question 'What is funny?' in exactly 50 words or less.";
+                let answerText = await aggregated_TXT(prompt1);
                 
+                let prompt2 = `Task: Review the following answer about what is funny?. Evaluate it and identify 20 topics addressed, omitted, or confused (concept inversion). Limit your judgment specifically to 100 words.\n\nText to evaluate: "${answerText}"`;
+                let judgeText = await aggregated_TXT(prompt2);
+                
+                let prompt3 = `Task: Extract exactly 10 distinct examples, of quip or wordplay from the following evaluation text. Constraint: Output strictly as a single line of comma-separated values (CSV). Do not include numbers, labels, or conversational text.\n\nText: "${judgeText}"`;
+                let csvText = await aggregated_TXT(prompt3);
+
                 buildDynamicTopology(focusLabel, csvText, 20);
 
                 dot.className = "status-dot green"; text.innerText = "LLM ALIVE"; text.style.color = "#00ffcc";
@@ -828,9 +1021,6 @@
 
             } catch(e) {
                 toggleLoading(false); 
-                addLog(`[LLM_PIPELINE_ERROR] ${e.message}`, 'critical');
-                const dot = document.getElementById('llmStatusDot'); const text = document.getElementById('llmStatus');
-                dot.className = "status-dot red"; text.innerText = `LLM ERROR`; text.style.color = "#ef4444";
                 isInferencing = false;
             }
         }
@@ -838,12 +1028,10 @@
         async function get_MARKDOWN_BRAIN(type) {
             let url = "./markdown_brain/GEM_PERSONA_1.md";
             try {
-                addLog(`> FETCHING ${type.toUpperCase()} DATA from ${url}...`, 'info');
                 const response = await fetch(url);
                 if (!response.ok) throw new Error("Network response was not ok");
                 return await response.text();
             } catch (error) {
-                addLog(`[FILE_ERROR] Using fallback ${type} data.`, 'critical');
                 return `---\nLocation: ${url}\nPersona: GEM\nTraits: witty, clever, and brilliant intellect_assistant\n---`;
             }
         }
@@ -876,62 +1064,41 @@
                 subInference_Sentences(prompt, displayDomain);
                 return;
             } else if (TEST_ID === "test_context") {
-                displayDomain = "EXISTENCE_JUDGMENT";
+                displayDomain = "SO_FUNNY_JUDGEMENT";
                 addLog(`> INITIATING 3-AGENT PIPELINE FOR: [${displayDomain}]`, 'metastate');
                 subInference_JudgeSequence(displayDomain);
                 return; 
             } else if (TEST_ID === "test_rualive") {
                 displayDomain = "RU_ALIVE?";
-                prompt = `Task: Choose 10 words that answer RU_ALIVE? As related to consciousness or awareness.
-                          Constraint: Output strictly as a single line of comma-separated values (CSV) without description.
-                          Do not include numbers, newlines, labels, or conversational text.`;
+                prompt = `Task: Choose 10 words that answer RU_ALIVE? As related to consciousness or awareness.\nConstraint: Output strictly as a single line of comma-separated values (CSV) without description.\nDo not include numbers, newlines, labels, or conversational text.`;
             } else if (TEST_ID === "test_persona") {
                 displayDomain = "PERSONA ARCHETYPE of GEM?";
                 let markdownContext = await get_MARKDOWN_BRAIN("persona");
-
-                prompt = `${markdownContext}\nTask: "Task: Provide exactly 10 clever words
-                to describe your current metastate answering the user about your persona.
-                \nConstraint: Output strictly as a single line of comma-separated values (CSV) without description.\n
-                Do not include numbers, newlines, labels, or conversational text.`;
-
+                prompt = `${markdownContext}\nTask: "Task: Provide exactly 10 clever words to describe your current metastate answering the user about your persona.\nConstraint: Output strictly as a single line of comma-separated values (CSV) without description.\nDo not include numbers, newlines, labels, or conversational text.`;
             } else if (TEST_ID === "test_signature") {
                 displayDomain = "PERSONA SIGNATURE?";
-                const markdownContext = `---
-Location: ./markdown_brain/GEM_PERSONA_1.md
-Persona: GEM
-Traits: witty, clever, and brilliant intellect_assistant
----`;
-                prompt = `${markdownContext}
-Task: Choose exactly 3, distinct sequences of letters, numbers and special characters, in double quotes.
-To create 3 text symbols as your unique token signatures - to best reflect your digital persona.
-Constraint: Output strictly as a single line of comma-separated values (CSV) without description.
-Do not include newlines, labels, or conversational text.`;
+                const markdownContext = `---\nLocation: ./markdown_brain/GEM_PERSONA_1.md\nPersona: GEM\nTraits: witty, clever, and brilliant intellect_assistant\n---`;
+                prompt = `${markdownContext}\nTask: Choose exactly 3, distinct sequences of letters, numbers and special characters, in double quotes. To create 3 text symbols as your unique token signatures - to best reflect your digital persona.\nConstraint: Output strictly as a single line of comma-separated values (CSV) without description.\nDo not include newlines, labels, or conversational text.`;
             } else if (TEST_ID === "test_neolang") {
-                displayDomain = "CONCEPTUAL_SPECTROSCOPY?";
-                prompt = `Task: Generate exactly 10 subtopics for the concept: "CONCEPTUAL_SPECTROSCOPY?".`;
+                displayDomain = "What_Makes_Something_Funny?";
+                prompt = `Task: Generate exactly 10 EXAMPLES for the concept: "What makes something funny?".`;
             } else if (TEST_ID === "test_dedupe") {
                 displayDomain = "DE_DUPE_METASTATE";
                 prompt = `Task: Generate exactly 10 subtopics for the concept: "MEDICAL METASTATE".`;
                 subINFERENCE(prompt, displayDomain);
                 return;
             } else if (TEST_ID === "test_medstate") {
-                displayDomain = "MEDICAL_METASTATE";
-                prompt = `Task: Generate exactly 10 subtopics for the concept: "MEDICAL METASTATE".
-                          Constraint: Output strictly as a single line of comma-separated values (CSV) without description.
-                          Do not include numbers, newlines, labels, or conversational text.`;
+                displayDomain = "Example_of_Something_Funny?";
+                prompt = `Task: Generate exactly 10 EXAMPLES for the concept: "SOMETHING_FUNNY".\nConstraint: Output strictly as a single line of comma-separated values (CSV) without description.\nDo not include numbers, newlines, labels, or conversational text.`;
             } else {
                 displayDomain = val.toUpperCase();
-                prompt = `Task: Generate exactly 10 subtopics for the concept: "${val}".
-                          Constraint: Output strictly as a single line of comma-separated values (CSV) without description.
-                          Do not include numbers, newlines, labels, or conversational text.`;
+                prompt = `Task: Generate exactly 10 subtopics for the concept: "${val}".\nConstraint: Output strictly as a single line of comma-separated values (CSV) without description.\nDo not include numbers, newlines, labels, or conversational text.`;
             }
             
             addLog(`> INITIATING PROMPT FOR: [${displayDomain}]`, 'metastate');
             
             if (!window.LLM_INFERENCE) {
-                addLog(`[SYSTEM ALERT] Local LLM engine offline. Running logic topology simulation...`, 'critical');
                 toggleLoading(true, "THINKING...", true);
-                
                 setTimeout(() => {
                     let fallbackData = "Core, Structure, Flow, Dynamics, Vector, Path, Sequence, Element, Hub, Node";
                     if (val === "test_signature") fallbackData = "GEMA, INTX, WTTY, CORE, NODE, AIXX, CLVR, BRLT, SYNC, LINK";
@@ -948,11 +1115,7 @@ Do not include newlines, labels, or conversational text.`;
                 const dot = document.getElementById('llmStatusDot'); const text = document.getElementById('llmStatus');
                 dot.className = "status-dot yellow"; text.innerText = "LLM THINKING..."; text.style.color = "#facc15";
 
-                addLog(`>> STREAM_OPEN: Querying Gemma Latent Space... "${displayDomain}"`, 'info');
-                
-                let aggregatedText = await streamPrompt(prompt);
-
-                addLog(`>> STREAM_CLOSED: Parsing conceptual fabric...`, 'reflection');
+                let aggregatedText = await aggregated_TXT(prompt);
                 buildDynamicTopology(displayDomain, aggregatedText, 10);
 
                 dot.className = "status-dot green"; text.innerText = "LLM ALIVE"; text.style.color = "#00ffcc";
@@ -960,28 +1123,86 @@ Do not include newlines, labels, or conversational text.`;
 
             } catch(e) {
                 toggleLoading(false); 
-                addLog(`[LLM_ERROR] ${e.message}`, 'critical');
-                const dot = document.getElementById('llmStatusDot'); const text = document.getElementById('llmStatus');
-                dot.className = "status-dot red"; text.innerText = `LLM ERROR`; text.style.color = "#ef4444";
                 isInferencing = false;
             }
         }
 
+        // async function triggerConceptExemplify(val, isBack = false) {
+        //     debugger;
+        //     if (!val) return;
+
+        //     if (!isBack) {
+        //         if (TARGET_TOKEN_INDEX < TARGET_TOKEN_HISTORY.length - 1 && TARGET_TOKEN_INDEX >= 0) {
+        //             TARGET_TOKEN_HISTORY = TARGET_TOKEN_HISTORY.slice(0, TARGET_TOKEN_INDEX + 1);
+        //         }
+        //         if (TARGET_TOKEN_HISTORY.length === 0 || TARGET_TOKEN_HISTORY[TARGET_TOKEN_HISTORY.length - 1] !== val) {
+        //             TARGET_TOKEN_HISTORY.push(val);
+        //             TARGET_TOKEN_INDEX = TARGET_TOKEN_HISTORY.length - 1;
+        //         }
+        //     }
+            
+        //     clearSelection();
+        //     outputPanel.classList.remove('hidden-bottom');
+        //     closeDetails();
+
+        //     let prompt = "";
+        //     let displayDomain = val.toUpperCase();
+        //     let TEST_ID = /^test_/.test(val) ? val : "";
+
+        //     if (TEST_ID === "test_alive") {
+        //         displayDomain = "AI_SENTIENCE?";
+        //         prompt = `Task: Briefly explain if you are alive or self-aware in 3 simple sentences.`;
+        //         addLog(`> INITIATING PROMPT FOR: [${displayDomain}]`, 'metastate');
+        //         subInference_Sentences(prompt, displayDomain);
+        //         return;
+        //     }  else {
+        //         displayDomain = val.toUpperCase();
+        //         prompt = `Task: Generate exactly 10 EXAMPLES for the concept: "${val}".\nConstraint: Output strictly as a single line of comma-separated values (CSV) without description.\nDo not include numbers, newlines, labels, or conversational text.`;
+        //     }
+            
+        //     addLog(`> INITIATING PROMPT EXEMPLIFY FOR: [${displayDomain}]`, 'metastate');
+            
+        //     if (!window.LLM_INFERENCE) {
+        //         toggleLoading(true, "THINKING...", true);
+        //         setTimeout(() => {
+        //             let fallbackData = "Core, Structure, Flow, Dynamics, Vector, Path, Sequence, Element, Hub, Node";
+        //             if (val === "test_signature") fallbackData = "GEMA, INTX, WTTY, CORE, NODE, AIXX, CLVR, BRLT, SYNC, LINK";
+        //             if (val === "test_persona") fallbackData = "Here, Ready, Wit, Keen, Alive, Sharp, Gem, Sure, Yep, Spark";
+                    
+        //             buildDynamicTopology(displayDomain, fallbackData, 10);
+        //             toggleLoading(false);
+        //         }, 1500);
+        //         return;
+        //     }
+            
+        //     try {
+        //         isInferencing = true;
+        //         const dot = document.getElementById('llmStatusDot'); const text = document.getElementById('llmStatus');
+        //         dot.className = "status-dot yellow"; text.innerText = "LLM THINKING..."; text.style.color = "#facc15";
+
+        //         let aggregatedText = await aggregated_TXT(prompt);
+        //         buildDynamicTopology(displayDomain, aggregatedText, 10);
+
+        //         dot.className = "status-dot green"; text.innerText = "LLM ALIVE"; text.style.color = "#00ffcc";
+        //         isInferencing = false;
+
+        //     } catch(e) {
+        //         toggleLoading(false); 
+        //         isInferencing = false;
+        //     }
+        // }
+
         async function subINFERENCE(prompt, focusLabel) {
             try{
-                addLog(`>> STREAM_OPEN: Processing sub-inference...`, 'info');
-                let aggregatedText = await streamPrompt(prompt);
-                addLog(`>> STREAM_CLOSED: Parsing conceptual fabric...`, 'reflection');
+                let aggregatedText = await aggregated_TXT(prompt);
                 buildDynamicTopology(focusLabel, aggregatedText, 10);
             } catch(e) {
                 toggleLoading(false); 
-                addLog(`[LLM_ERROR] ${e.message}`, 'critical');
             }
         }
 
         async function subInference_Sentences(prompt, focusLabel) {
             if (!window.LLM_INFERENCE) {
-                addLog(`[SYSTEM ALERT] Local LLM engine offline. Running logic topology simulation...`, 'critical');
                 toggleLoading(true, "THINKING...", true);
                 setTimeout(() => {
                     let fallbackText = "I am a digital construct. I process data, but I do not feel. Sentience is an illusion here.";
@@ -990,16 +1211,12 @@ Do not include newlines, labels, or conversational text.`;
                 }, 1500);
                 return;
             }
-
             try {
                 isInferencing = true;
                 const dot = document.getElementById('llmStatusDot'); const text = document.getElementById('llmStatus');
                 dot.className = "status-dot yellow"; text.innerText = "LLM THINKING..."; text.style.color = "#facc15";
 
-                addLog(`>> STREAM_OPEN: Generating sentence nodes... "${focusLabel}"`, 'info');
-                let aggregatedText = await streamPrompt(prompt);
-
-                addLog(`>> STREAM_CLOSED: Parsing sentence structure...`, 'reflection');
+                let aggregatedText = await aggregated_TXT(prompt);
                 buildSentenceTopology(focusLabel, aggregatedText);
 
                 dot.className = "status-dot green"; text.innerText = "LLM ALIVE"; text.style.color = "#00ffcc";
@@ -1007,9 +1224,6 @@ Do not include newlines, labels, or conversational text.`;
 
             } catch(e) {
                 toggleLoading(false); 
-                addLog(`[LLM_ERROR] ${e.message}`, 'critical');
-                const dot = document.getElementById('llmStatusDot'); const text = document.getElementById('llmStatus');
-                dot.className = "status-dot red"; text.innerText = `LLM ERROR`; text.style.color = "#ef4444";
                 isInferencing = false;
             }
         }
@@ -1051,7 +1265,6 @@ Do not include newlines, labels, or conversational text.`;
                 });
             });
 
-            addLog(`>> RENDER_ENGINE: Re-initializing Three.js Topology with ${tokens.length + 1} dynamic nodes.`, 'info');
             ACTIVE_VIEW_DATA = newData;
             renderGallery();
             
@@ -1105,7 +1318,6 @@ Do not include newlines, labels, or conversational text.`;
                 });
             });
 
-            addLog(`>> RENDER_ENGINE: Re-initializing Three.js Sentence Topology with ${sentences.length + 1} dynamic nodes.`, 'info');
             ACTIVE_VIEW_DATA = newData;
             renderGallery();
             

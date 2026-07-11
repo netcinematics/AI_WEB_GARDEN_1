@@ -1,4 +1,10 @@
- 1111] AXIOMZ_1 | genesis | 6_2026 |.|
+ 1110] AXIOM_COLLECTOR | spark_epiphany | 7_2026 |:
+
+ 1) ORIGIN_STORY | axiom_collector seeks concepts not yet in simple words | axiom_collector finds many concepts unseen | then painstakingly craftz them into axiomz | until axiomz best_reflect_actual_reality |+ and so on, cyclically, endlessly, ad infinitum|.
+
+
+
+ 1111] AXIOMZ | FOCUS_GENESIS | 6_2026 |.|
 
  1111) GAME_KEY | PIPE_TXT | grid reading system | for humans and AI | less linguistic fluff, more concept |+ 
  Numbering System | AXIOMZ numbered by AI | AXIOMIC_IDX, or IDX | AI_CONCEPT_INDEXING | DATE postfix makes unique, automated by AI | 1111_06_2026 |better than day and time |  1111-0000 | later 11111-99999 | Unique Concept ID Number as IDX |+ Autonumbering by AI |: Every "1111]" is a BOOK_NUMBER | Every "1111}" is a PAGE_NUMBER | Every "1111)" is a PHRASE_NUMBER | Every "|&|" is a SIBLING_TOPIC Every "|+" and "|-" adds a SUB_INDEX | extra number SUB_SECTION, calculated by AI, as decimal: 1111.1 | indicative of pro and con VIEWZ defined elegantly | Note: syntax is optional, flexible, fluid, supplemental and open-ended, just as conceptual_fabric is fluid, supplementatl and open-ended | In PIPE_TXT, concept items end elegantly with '.' and also a final character "|.", like this |. 

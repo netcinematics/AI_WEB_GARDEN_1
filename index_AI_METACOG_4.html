@@ -39,7 +39,7 @@
         .data-node:hover { border-left: 2px solid #00ffcc; background: rgba(0,255,204,0.1); }
 
         .tab-btn {
-            background-color: transparent; padding: 0.125rem 0.5rem; font-size: 14px; font-style: italic; 
+            background-color: transparent; padding: 0.125rem 0.5rem; font-size: 14px; font-weight: bold; 
             letter-spacing: 0.1em; text-transform: uppercase; border-radius: 0.25rem; 
             transition: all 0.2s; cursor: pointer; margin-right: 0.444em;
         }
@@ -86,8 +86,7 @@
         
         .btn-close { color: firebrick; font-weight: bold; font-size: 1.25rem; background: none; border: none; cursor: pointer; transition: color 0.2s; padding: 0 0.5rem; }
         .btn-close:hover { color: dodgerblue; }
-        .btn-close-red {     top: 1rem;  right: 1rem;
-            font-size: 0.888rem; color: firebrick; position: absolute; z-index: 105; pointer-events: auto; background: none; border: none; cursor: pointer; font-weight: bold; transition: color 0.2s; }
+        .btn-close-red { top: 1rem; right: 1rem; font-size: 0.888rem; color: firebrick; position: absolute; z-index: 105; pointer-events: auto; background: none; border: none; cursor: pointer; font-weight: bold; transition: color 0.2s; }
         .btn-close-red:hover { color: dodgerblue; }
 
         .title-panel {
@@ -100,7 +99,7 @@
         .domain-select {
             background: rgba(0,0,0,0.8); border: 1px solid rgba(0,255,204,0.5); padding: 0.5rem; font-size: 1.222em;
             font-weight: bold; width: 100%; outline: none; color: #00ffcc; border-radius: 0.25rem; transition: border-color 0.2s;
-            letter-spacing: 0.1em; pointer-events: auto; cursor: pointer; font-style: italic;
+            text-transform: uppercase; letter-spacing: 0.1em; pointer-events: auto; cursor: pointer; font-style: italic;
             padding-right: 1em;
         }
         @media (min-width: 768px) { .domain-select { font-size: 1rem; } }
@@ -165,15 +164,13 @@
     <div id="overlay-vignette"></div>
 
     <div class="ui-layer">
-        <button id="loadingCloseBtn" onclick="forceCloseLoading()" class="btn-close-red" title="Bypass Loading">✕</button>
-        
         <div id="install-btn-container" style="display: none; position: 
             absolute; bottom: 4.444rem; right: 1rem; z-index: 100;">
             <button id="install-btn" class="interactzone btn-concept monospace-text" style="margin-top:0; padding: 0.5rem 1rem; color: #00ffcc; border-color: #00ffcc; font-size: 0.875rem;">INSTALL PWA</button>
         </div>
 
         <div class="interactzone flex items-center" 
-            style="position: absolute; top: 0.888rem; right: 3.666rem; z-index: 60; padding: 0.5rem 1rem; gap: 0.5rem;">
+            style="position: absolute; top: 0.888rem; right: 0.888rem; z-index: 60; padding: 0.5rem 1rem; gap: 0.5rem;">
             <div id="llmStatusDot" class="status-dot red"></div>
             <span id="llmStatus" style="font-size: 10px; font-weight: bold; letter-spacing: 0.2em; color: #ef4444; text-transform: uppercase;">LLM LOADING</span>
         </div>
@@ -200,26 +197,26 @@
                 font-style: italic;"><b>PHASE_2 : METACOGNITIVE ~ HIPPOCAMPUS !</b></p>
             <h1 class="monospace-text" style="font-size: 22px; color: #00ffcc; letter-spacing: 0.1em; 
                 margin: 1em 0 0.5rem 1em;"><b><i>BIO_MIMICRY </i>| MODALITY :</b></h1>
-            <h2 class="monospace-text" style=" font-size:small; color: skyblue; letter-spacing: 0.1em; 
+            <h2 class="monospace-text" style="font-size:small; color: skyblue; letter-spacing: 0.1em; 
                 margin: 1em 0 0.5rem 4em;">1) <span style="color:rgb(192, 68, 254); font-size:small;font-family:unicode;">"HIPPO_CAMPUS"</span> | local_memory | editable | .md</h2>
-            <h2 class="monospace-text" style=" font-size:small; color: skyblue; letter-spacing: 0.1em; 
-                margin: 1em 0 0.5rem 4em;">2) <span style="color:orange; font-size:small; font-family:unicode;">"METASTATE".</span> | dynamic_memory | IndexedDB | "IDX" |</h2>
-            <h2 class="monospace-text" style=" font-size:small; color: skyblue; letter-spacing: 0.1em; 
-                margin: 1em 0 0.5rem 4em;">3) <span style="color:#facc15;  font-size:small; font-family:unicode;">UX | SKILLS:</span> | "Library_Agent" | Prune, Edit, Reference |</h2>
+            <h2 class="monospace-text" style="font-size:small; color: skyblue; letter-spacing: 0.1em; 
+                margin: 1em 0 0.5rem 4em;">2) IDX: IndexedDB memory <span style="font-size:small; font-family:unicode;">"METASTATE".</span></h2>
+            <h2 class="monospace-text" style="font-size:small; color: skyblue; letter-spacing: 0.1em; 
+                margin: 1em 0 0.5rem 4em;">3) UX: Pruning, Editing, Reference</h2>
             
             <div class="flex items-center" style="margin-top: 0.5rem; width: 100%;">
                 <select id="domain-select" style="color:skyblue;" class="domain-select monospace-text" onchange="triggerConceptInference(this.value)">
-                    <option style="color:skyblue;" value="" disabled selected> ⬢ LLM Manifold | SKILLS & Experiments:</option>
+                    <option style="color:skyblue;" value="" disabled selected> LLM Manifold SKILLS:</option>
                     <option style="color:skyblue;" value="" disabled> A: CONTROL TESTS (LLM Identity)</option>
-                    <option style="color:skyblue;" value="test_alive">1.1) Who_are_you? (no) (metacognition)</option>
-                    <option style="color:skyblue;" value="test_rualive">1.2) What_do_you_remember? (neologism as deep semantics)</option>
+                    <option style="color:skyblue;" value="test_alive">1.1) Are you ALIVE? (no) (metacognition)</option>
+                    <option style="color:skyblue;" value="test_rualive">1.2) RU ALIVE? (neologism as deep semantics)</option>
                     <option style="color:skyblue;" value="" disabled> B:</option>
                     <option style="color:skyblue;" value="test_persona">2.1) AGENT PERSONA? (from local markdown library)</option>
                     <option style="color:skyblue;" value="test_signature">2.2) LLM Signature (HIPPOCAMPUS | identity)</option>
                     <option style="color:skyblue;" value="" disabled> C:</option>
                     <option style="color:skyblue;" value="test_neolang">3.1) NEOLOGISM Inference? (conceptual_spectroscopy)</option>
                     <option style="color:skyblue;" value="test_context">3.2) JUDGE AGENT: What is EXISTENCE?</option>
-                    <option style="color:skyblue;" value="test_medstate">3.3) ONE_LAST_QUESTION? (What,why,when,where,how,who,see?)</option>
+                    <option style="color:skyblue;" value="test_medstate">3.3) NAVIGATE MEDICAL VERBOLOGY? (metastasis)</option>
                 </select>
             </div>
         </div>
@@ -280,38 +277,44 @@
             </div>
             
             <!-- Feed One: Core Log Feed (Default) -->
-            <div id="feed_one" class="log-feed tellecto-scrollbar monospace-text" style="display: flex; font-weight: bold;">
-                <div style="opacity: 0.5;">[NOTE:] LLM LOGS, TRACE, and Gemma Thinking.</div>
-                <div style="opacity: 0.5;">[SYS] Engine ready.</div>
+            <div id="feed_one" class="log-feed tellecto-scrollbar monospace-text" style="display: flex;">
+                <div style="opacity: 0.5;">[SYS] Engine ready. Awaiting LLM domain expansion... (VIEW 1)</div>
             </div>
             
-            <!-- Feed Two: Modality 2 (STATIC Metastate, from LOCAL_MARKDOWN) -->
-            <div id="feed_two" class="log-feed tellecto-scrollbar monospace-text" style="display: none; font-weight: bold;">
-                <div style="opacity: 0.5; color:#00ffcc;">[MODALITY_1] HIPPO_CAMPUS - AGENTS :</div>
-                <hr style="width:100%; border-color:steelblue;"/>
-                <span style="color:#3b82f6; font-weight:bold;">"AGENTZ":</span>
-                <div class="data-node" style="border-left: 2px solid #3b82f6; background: rgba(59, 130, 246, 0.05);">
-                    <div style="font-size: 12px; margin-top: 0.5rem; color: #60a5fa;">1) JUDGE_AGENT</div>
-                    <div style="font-size: 12px; margin-top: 0.5rem; color: #60a5fa;">2) SUMMARY_AGENT</div>
-                    <div style="font-size: 12px; margin-top: 0.5rem; color: #60a5fa;">3) LIBRARY_AGENT</div>
+            <!-- Feed Two: Modality 2 (Metastate / AGENTZ) -->
+            <div id="feed_two" class="log-feed tellecto-scrollbar monospace-text" style="display: none;">
+                <div style="opacity: 0.5;">[MODALITY_1] HIPPO_CAMPUS METASTATE - AGENTZ.</div>
+                <div class="flex gap-2 mb-2 mt-2">
+                    <button onclick="fetchMemory('GEM')" style="background:rgba(250,204,21,0.2); color:#facc15; border:1px solid #facc15; font-weight:bold; padding:0.25rem 0.75rem; border-radius:0.25rem; cursor:pointer;">GEM</button>
+                    <button onclick="fetchMemory('JUDGE')" style="background:rgba(0,255,204,0.2); color:#00ffcc; border:1px solid #00ffcc; font-weight:bold; padding:0.25rem 0.75rem; border-radius:0.25rem; cursor:pointer;">JUDGE</button>
+                </div>
+                <div id="agentz_content" class="data-node" style="border-left: 2px solid #3b82f6; background: rgba(59, 130, 246, 0.05); white-space: pre-wrap;">
+                    <span style="color:#3b82f6; font-weight:bold;">[VIEW 2] Dynamic Metastate Visualization Channel</span>
+                    <div style="font-size: 12px; margin-top: 0.5rem; color: #60a5fa;">Awaiting IndexedDB sync protocols... Select an AGENT to load memory.</div>
                 </div>
             </div>
 
-            <!-- Feed Three: Modality 3 (Pruning) -->
-            <div id="feed_three" class="log-feed tellecto-scrollbar monospace-text" style="display: none; font-weight: bold;">
-                <div style="opacity: 0.5;">[MODALITY_2] HIPPO_CAMPUS - "METASTATE" : </div>
-                <div class="data-node" style="border-left: 2px solid #ff00ff; background: rgba(255, 0, 255, 0.05);">
-                    <span style="color:#ff00ff; font-weight:bold;">[VIEW 3] "ATOMZ",  "AXIOMZ", & AGENTZ = "METASTATE". </span>
-                    <div style="font-size: 12px; margin-top: 0.5rem; color: #f472b6;">Editable Memories.</div>
+            <!-- Feed Three: Modality 3 (Pruning / ATOMZ) -->
+            <div id="feed_three" class="log-feed tellecto-scrollbar monospace-text" style="display: none;">
+                <div style="opacity: 0.5;">[MODALITY_2] UX PRUNING ENGINE - ATOMZ.</div>
+                <div class="flex gap-2 mb-2 mt-2">
+                    <button onclick="fetchMemory('ATOMZ')" style="background:rgba(255,0,255,0.2); color:#ff00ff; border:1px solid #ff00ff; font-weight:bold; padding:0.25rem 0.75rem; border-radius:0.25rem; cursor:pointer;">ATOMZ</button>
+                </div>
+                <div id="atomz_content" class="data-node" style="border-left: 2px solid #ff00ff; background: rgba(255, 0, 255, 0.05); white-space: pre-wrap;">
+                    <span style="color:#ff00ff; font-weight:bold;">[VIEW 3] Concept Editing & Pruning Interface</span>
+                    <div style="font-size: 12px; margin-top: 0.5rem; color: #f472b6;">Awaiting structural definitions... Select ATOMZ to load memory.</div>
                 </div>
             </div>
 
-            <!-- Feed Four: Modality 4 (Reference) -->
-            <div id="feed_four" class="log-feed tellecto-scrollbar monospace-text" style="display: none; font-weight: bold;">
-                <div style="opacity: 0.5;">[MODALITY_4] HIPPO_CAMPUS - DYNAMICZ :</div>
-                <div class="data-node" style="border-left: 2px solid #facc15; background: rgba(250, 204, 21, 0.05);">
-                    <span style="color:#facc15; font-weight:bold;">[VIEW 4] "DYNAMICZ"</span>
-                    <div style="font-size: 12px; margin-top: 0.5rem; color: #fde047;">Awaiting cross-modal integrations...</div>
+            <!-- Feed Four: Modality 4 (Reference / AXIOMZ) -->
+            <div id="feed_four" class="log-feed tellecto-scrollbar monospace-text" style="display: none;">
+                <div style="opacity: 0.5;">[MODALITY_3] DYNAMIC REFERENCE - AXIOMZ.</div>
+                <div class="flex gap-2 mb-2 mt-2">
+                    <button onclick="fetchMemory('AXIOMZ')" style="background:rgba(250,204,21,0.2); color:#facc15; border:1px solid #facc15; font-weight:bold; padding:0.25rem 0.75rem; border-radius:0.25rem; cursor:pointer;">AXIOMZ</button>
+                </div>
+                <div id="axiomz_content" class="data-node" style="border-left: 2px solid #facc15; background: rgba(250, 204, 21, 0.05); white-space: pre-wrap;">
+                    <span style="color:#facc15; font-weight:bold;">[VIEW 4] HIPPO_CAMPUS External Reference Hub</span>
+                    <div style="font-size: 12px; margin-top: 0.5rem; color: #fde047;">Awaiting cross-modal integrations... Select AXIOMZ to load memory.</div>
                 </div>
             </div>
         </div>
@@ -379,9 +382,9 @@
             { label: 'TARGET_TOKENS', type: 'COMPOSITE_CONCEPTS', color: 0xaa00ff, color2: 0x00ccff, size: 14, x: 0, y: 0, z: 0, desc: 'Conceptual diamond for maximum clarity.', lineage: 'ROOT' },
             { label: 'ACTZ', type: 'ATOMZ', color: 0x00ffcc, size: 8, x: -30, y: 0, z: -20, desc: 'Core choice for action. First axis of aTRIANGULATZa.', lineage: 'aPRYZMa' },
             { label: 'VIEWZ', type: 'ATOMZ', color: 0xff00ff, size: 8, x: 30, y: 0, z: -20, desc: 'Sensory Conceptual Input. Second axis of aTRIANGULATZa.', lineage: 'aPRYZMa' },
-            { label: 'ATOMZ', type: 'ATOMZ', color: 0xffff00, size: 8, x: 0, y: 0, z: 35, desc: 'Mental Model Structure. Third axis of aTRIANGULATZa.', lineage: 'aPRYZMa' },
-            { label: 'AXIOMZ', type: 'SIMPLE_SPARKLE', color: 0x00ffcc, size: 10, x: -20, y: 15, z: 20, desc: 'Source of life, epiphany, and awareness.', lineage: 'aCONCEPTZa' },
-            { label: 'METASTATE', type: 'FOG_CLOUD', color: 0xff0044, size: 12, x: 25, y: -10, z: 15, desc: 'Distortion of word meaning. Concepts beneath words.', lineage: 'aCONCEPTZa' }
+            { label: 'aCONCEPTZa', type: 'ATOMZ', color: 0xffff00, size: 8, x: 0, y: 0, z: 35, desc: 'Mental Model Structure. Third axis of aTRIANGULATZa.', lineage: 'aPRYZMa' },
+            { label: 'aSPARKa', type: 'SIMPLE_SPARKLE', color: 0x00ffcc, size: 10, x: -20, y: 15, z: 20, desc: 'Source of life, epiphany, and awareness.', lineage: 'aCONCEPTZa' },
+            { label: 'aDARKa', type: 'FOG_CLOUD', color: 0xff0044, size: 12, x: 25, y: -10, z: 15, desc: 'Distortion of word meaning. Concepts beneath words.', lineage: 'aCONCEPTZa' }
         ];
 
         const TOPOLOGY_TYPES = ['ATOMZ', 'AXIOM_CLUSTER', 'AXIOM_PRISM', 'SIMPLE_SPARKLE', 'FOG_CLOUD'];
@@ -682,6 +685,32 @@
             }
         }
         
+        async function fetchMemory(type) {
+            let url = "";
+            let targetId = "";
+            
+            if (type === 'GEM') { url = "./markdown_brain/GEM_PERSONA_1.md"; targetId = "agentz_content"; }
+            else if (type === 'JUDGE') { url = "./markdown_brain/AGENTZ_1.md"; targetId = "agentz_content"; }
+            else if (type === 'ATOMZ') { url = "./markdown_brain/ATOMZ_1.md"; targetId = "atomz_content"; }
+            else if (type === 'AXIOMZ') { url = "./markdown_brain/AXIOMZ_1.md"; targetId = "axiomz_content"; }
+
+            const targetEl = document.getElementById(targetId);
+            if (!targetEl) return;
+            
+            targetEl.innerHTML = `<span style="color:#00ffcc;">Loading ${type} vector from ${url}...</span>`;
+            
+            try {
+                const response = await fetch(url);
+                if (!response.ok) throw new Error("File not found in environment.");
+                const text = await response.text();
+                targetEl.innerHTML = `<span style="color:#ffffff;">${text}</span>`;
+                addLog(`[MEMORY_IO] Successfully loaded ${type} vector.`, 'metastate');
+            } catch (err) {
+                targetEl.innerHTML = `<span style="color:#f87171;">[ERROR] Could not load ${url}.</span>\n\n<span style="color:#d1fae5;">Simulated Content for ${type}:\n---\nVector Data Loaded...\nNode count: ${Math.floor(Math.random() * 100) + 10}\nStatus: Operational\nModality: Bio-Mimicry / Hippo_Campus\n---</span>`;
+                addLog(`[MEMORY_IO] Simulated fallback for ${type} vector.`, 'info');
+            }
+        }
+
         function addLog(msg, type = 'info') {
             const div = document.createElement('div'); div.className = 'data-node border-l-2';
             const timestamp = new Date().toLocaleTimeString([], { hour12: false, hour: '2-digit', minute: '2-digit', second: '2-digit', fractionalSecondDigits: 2 });
