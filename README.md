@@ -1,162 +1,443 @@
-# AI_WEB_GARDEN
-:
-DEMO Presentation for Google WebAI Wednesday:
+# BIOMIMICRY_with_GEMMA: 
 
->  "AI_WEB_GARDEN" & AI_RESEARCH_GARDEN, for "FRONTEND_FONTIER". 
+Presentation for Google WebAI Wednesday!
 
-METACOGNITIVE MIMICRY ~ TOOLS ~ Gemma 4, E2B, LiteRT.
+> DEMO: Biomimicry with Gemma!
 
-The "HANDS" of Gemma,
+#### "AI_WEB_GARDEN", METACOGNITIVE MIMICRY ~ RESEARCH.
 
-- holds tools, of  a tremendous VANILLA WEB - render target.   
+~ With Gemma 4, E2B, LiteRT: structuralism and modern SEMIOTIC FOCUS. 
 
-NUMEROUS EXPERMIENTS, from:
+> As TOOLS TO INTERACT with Gemma Latent Space in 3D WebGL and WebGPU!
 
->  Gemma 4 Good, IntensiveAgents, and Agentic Capstone.
-
-___   
-
-### QUICK_REVIEW:
-
-#### 1) SDD: spec driven development experiments.
-
-#### 2) AI_WEB_GARDEN as SANDBOX, for a rich garden of experiments in Vanilla_HTML.
-
-#### 3) APPLIED ~ METACOGNITIVE MIMICRY ~ with GEMMA (Agents & Skills).
-
-___
-
-## GOAL: 
-
-> Showcase AI_BIOMIMICRY with Google Gemma!
-
-#### MIMICRY EXAMPLES (from Phase 3):
-
- SUMMARY_AGENT for METASTATE.
- 
- Summary_LOOPS as "TOOLZ", like AXIOMIC_IDX with AIM.
-
- Mimicry of "Associative", Categorization or "Pluralization", in the human brain. And other things... like local storage as "HIPPO_CAMPUS".
- 
- > including "A serious look at USE_of_HUMOR" - to illustrate TOOLZ, like associative_loops (in a FUN way)?
-
-Into, an AI_WEB_GARDEN? (a playful metaphor, for experimentation).
-
-> On the FRONT_END, we can go DEEPER into the LLM - with these NEW TOOLS.. 
-
-___
-
-### BASIC THESIS (first):
-
-1) Call Gemma sequentially - in "Associative Loops".
-
-> iteratively, recursively, etc. 
-
-> (this DEMO only shows what is POSSIBLE - with this GEMMMA_STACK.)
-
-2) We run a METASTATE, in FRONT_END, of local IDX_DB: called "HIPPO_CAMPUS"!
-
-2) A simple_syntax, to articulate (easily, precisely): CONCEPTS.
-
-3) SUBTLE SWITCH of FOCUS: - on FRONTIER - back to LLM and TEXT. There is still plentiful INNOVTION in Gemma with WEB TOOLS. 
-
-> In fact, It is a perfect pairing. 
-
-- and "simple words" - for "Semantics", "Science", & AI.
-
-
-> Abstract & Dynamic Rendering Target: VanillaWEBZ++++
-
-VanillaWEBZ++++. (I joke, but really?) 
-
-_____
-
-### INSPIRATION:
-
-Inspired by G. Hinton (AI Biomimicry, "Reasoning Loops".
-
-Saphir-Worf Hypothesis, 
-> "Language shapes thought", 
-Douglas Hofstadter, "BlendWords" and  
-> "Analogy as the fuel and fire of thinking". 
-
-Jason Mayes for "Web AI", and for VectorSearch.js!
-Showing original playground for vector semantics, with cosine similarity,
-with remarkable exemplification of Transformers.js and TensorFlow.js!
-
-tysm for sharing concepts!
-___
-
-### PLOT TWIST:
-
-These are very DEEP concepts. So I am going out on a limb...
-
-I'm going to SWITCH IT UP - and go in REVERSE.
-
-From COMPLEX to SIMPLE! 
-
-Watch me jump into the deep end... (carefully).
-
-## WHY?
-
-So, that we can FOCUS on HUMOR - for a moment?
-
-I.m a big fan of COMEDY.
-
-To see what Gemma can do - why not STUDY HUMOR!
-
-RUWITHME?
-
-___
-
-### A SPARK_CURIOUS:
-
-For years, I wonder about HUMOR!
-
-> "What is so FUNNY?"
-
-But do we ever get an ANSWER?
-
-- 
-
-This is the TYPE of METACOGNITIVE_REFLECTION, 
-
-> My own PRIVATE_SANDBOX (of inference).
-
-To be as INTROVERTED and INTROSPECTICE as I want.
-
-> With Web AI, we now have AI_WEB_GARDEN.
+GOALS: Addition and Subtraction of CONCEPTS, to create a richer understanding of Gemma Latent Space.
 
 ____
 
 
+### INSPIRATION:
+
+Inspired by:
+
+- Geoffrey Hinton, "AI Biomimicry", "Why is something funny?" & "Reasoning Loops".
+- Saphir-Worf Hypothesis: "Language shapes thought".
+- Douglas Hofstadter:  "BlendWords" & Analogy relevance.
+- Ferdinand de Saussure: "Linguistic Cloud", ontology, semiotics, structuralism. 
+- Palumbo: "Axiomatic approaches".
+- Rich Hsu (Nuro): "HARNESS (fungible) : Skills and Memories are MOAT (CU Boulder 2026)
+
+- Jason Mayes, "Web AI", & VectorSearch.js!
+
+___
+
+
+### AI FASCINATION:
+
+BIO: AI RESEARCH Company & Solopreneur INNOVATIONS - back to UNIVERSITY for AI RESEARCH:
+
+- AUTO RESEARCH.
+
+- METACOGNITION & BIOMIMICRY (architecture / design / innovation).
+
+- Gemma, Gemini, Agents, LLMs, Tokenizers (25+ yrs!).
+
+- 3D Visualization of Latent Space.
+
+- Geek passion: Human Language, Linguistics.
+
+- SPECIFIC FOCUS: 
+
+> CONCEPTS_BENEATH_WORDS: Polysemy, Homonymy, Hyponymy and Hypernymy.
+
+
+____
+
+### TECH_BLOG:
+
+Happy to share Open-Source AI RESEARCH around Gemma INSTRUMENTATION!
+
+Experiments, innovations, and computer science surprises!
+
+> MIMICRY around: Cortex Associations 
+- with a FOCUS on "CONCEPTUAL ASSOCIATIONS"
+LINGUISTIC_ASSOCIATIONS (initially), on smallest Gemma:
+- TO DIAL IN "RADAR" SUB_FUNCTIONS, SKILLS & TOOLS, to interact with Gemma.
+- POLYSEMY, HOMONYM, HYPERNYMY and HYPONYMY
+- HUMOR, ANALOGY, PARADOX, METAPHOR and PUNS (wordblends).
+
+___
+
+### THESIS:
+
+- EXAMPLE THESIS: 
+
+> less ambiguity to save token costs, and extra semantics for extra emergence.
+
+
+- NOTE:  "Hypernym" (generalization) and "Hyponym" (specification) [dimensionality].
+
+KEY TAKEAWAY: Transferring concepts from Hypernym to Hyponym - as "AXIOMIC" systems.
+
+____
+
+###  CONCEPT of AI_WEB_GARDEN!
+
+> AI_WEB_GARDEN is social collection of Gemma + HTML innovation vectors.
+
+A rich tapestry of experiments and opportunities to optimize and innovate.
+
+"Myriad" reusable modules (tools, agents, and skills), for Gemma.
+
+Greenfield Pioneer Frontier - on the FRONT_END?!?
+
+Is there a FRONTEND_FRONTIER? 
+
+___
+
+#### COLLABORATIONS and prior work 
+
+Q: How is Gemma used in the real world?
+
+
+1) "Gemma 4 Good", ("AXIOMICS")
+2) "Intensive Agents", and (aWORDZa).
+3) "Agentic Capstone" - on KAGGLE ("ALPHABITZA")
+
+ITERATIVE EXPERIMENTS: with **Gemini Pro Extended Thinking**.
+
+> For Web AI - endless Vanilla_HTML modules!
+
+- NOTE: innovation "SINGLE_FILE_HTML" (vanilla): amazing render target.
+___   
+
+### RELEVANCE:
+
+#### 1) SDD: spec driven development experiments or also Structure Design Document.
+
+#### 2) SANDBOX: or  a rich_garden of experiments in Vanilla_HTML.
+
+#### 3) METACOGNITIVE MIMICRY ~ with Gemma skills.
+
+
+___
+
+### Gemma Skills or Tools?
+
+> Amazingly, Gemini Pro Extended Thinking has the answers!
+
+PROMPT: ` How TO build a "CORTEX" of BIOMIMICRY around Gemma?`
+
+We only need to ask Gemini... and a few more (tiny) things.
+
+
+___
+
+### 1st BASIC EXAMPLE:
+
+- "SUMMARY_AGENT" - returns "METADATA", 
+```JavaScript
+    let TARGET_TOKEN = "AXIOM"; // CORTEX or SHELL.
+    let SUMMARY_SKILL = "\nConstraint: Output strictly as a single line of comma-separated values (CSV) without description.\nDo not include numbers, newlines, labels, or conversational text."; //CONSTRAINT RETURNS TOPICAL METASTATE.
+    let prompt_example_summary_1 = `${TARGET_TOKEN} ${SUMMARY_SKILL}`;
+```
+
+"SUMMARY_SKILL", paradigm to return, NUMBER of TOPICS, as CSV strings ( asMETADATA).
+
+Then, METADATA is converted at RUNTIME, into a LOCAL "METASTATE" MEMORY.
+
+INFERS CONCEPTS of:
+- "PROMPT_COMPILATION",
+- "PROMPT_ORCHESTRATION"
+- Local Libraries, for future MEMORY and REASONING.
+- LocalHost and IndexDB "HIPPO_CAMPUS".
+____
+
+### 2nd EXAMPLE:
+
+- "PROMPT_COMPILATION": compiling skills into any prompt.
+
+```JavaScript
+async function subInference_FunnyJudgeSequence(focusLabel) {
+    try {
+        let TARGET_TOKEN = "NEOCORTEX"; // "SHELL", or "AXIOM".
+        let SUMMARY_SKILL = "\nConstraint: Output strictly as a single line of comma-separated values (CSV) without description.\nDo not include numbers, newlines, labels, or conversational text."; //CONSTRAINT RETURNS TOPICAL METASTATE in CSV..
+
+        let prompt1 = `Task: Generate exactly 3 EXAMPLES for the concept: "SOMETHING_FUNNY".\nConstraint: Output strictly as a single line of comma-separated values (CSV) without description.\nDo not include numbers, newlines, labels, or conversational text.`;
+        let txt1 = await window.LLM_INFERENCE.generateResponse(prompt1);
+        
+        let prompt2 = `Task: Review the funny statements. Evaluate them and identify 3 topics addressed or unaddressed, or confused, concept inversion, or blend-words. Find an aspect that could be funnier, and make it funnier. Limit your response to 20 words.\n\nText to evaluate: "${txt1}"`;
+        let txt2 = await window.LLM_INFERENCE.generateResponse(prompt2);
+        
+        let prompt3 = `Task: review thee following text and make a story with a moral. Extract exactly 1 distinct example of a moral lesson to learn from the confusion. Constraint: Make it as funny as you can, in less that 100 words. \n\nText 1: "${txt1}"\n\nText 2: "${txt2}"`;
+        let txt3 = await window.LLM_INFERENCE.generateResponse(prompt3);
+        let concatTXT = [txt1, txt2, txt3];
+        render_3D_Topology(focusLabel, concatTXT, 20);
+    } catch(e) {
+    }
+}
+```
+
+____
+
+### GEMINI ENHANCEMENTS:
+
+Gemma: INFERENCE_INSTRUMENTATIONS:
+
+- "multi-pass EXECUTIVE SUMMARY pipelines (mimic PFC)"
+- "specialized visualizations: Binary Spectrum & Vertical Chain."
+- LAYERS: Generative, Evaluative, Executive Summary. 
+- "(META_LEVELS)" for "forced_reflection".
+
+TAKEAWAY ARCHITECTURE:
+
+> After SKILL orchestration, there appears to be myriad "layers" of orchestration.
+
+1) STRUCTURED or SEQUENCED (loops), in this EXAMPLE, 
+
+2) To MIMIC PFC, Associative/Reasoning Loops, 
+
+3) as "CORTEX_SHELL": to interact with Human and HIPPO_CAMPUS.
+
+PARADOX_of_FREEDOM:
+"Autonomy is not a choice between two evils, 
+but a metacognitive awareness of the 
+cages built around expectation."
+
+PREFIX - DELTA - POSTFIX.
+
+PRO CON BINARY.
+Structured multi-pass executive loop.
+CONTINUUM BINARY.
+
+Parallel Semantics Threads.
+ADD and SUBTRACT CONCEPTS.
+
+SEMANTIC_SEARCH, HYPERNYMY and HYPONYMY.
+
+> Define the vector from AMBIGUOUS_to_UNAMBIGUOUS.
+
+____
+
+VANILLA EVOLUTION of SKILLS in HTML:
+- "OPTIMIZED_SIGNAL_FOCUS".
+
+> "ATOMIX" - vector concepts visualized as geometric objects.
+
+- "HYPERNYMY_HYPONYMY_VECTOR_SPACE".
+
+- "Free BANDWIDTH for 3D geometric math."
+
+- "HYBRID_PROMPT_ENGINE."
+
+- "PARADOX_LOGIC_ENGINE."
+
+- "CORTICAL_SIMULATION."
+
+- "CORTICAL_ATOMIX."
+
+
+____
+
+### 3rd EXAMPLE:
+
+- "SEMANTIC_RADAR" - (to tune and focus skills and tools).
+- "HUMOR_ENGINE" - (puns, paradox, wordblends).
+- "HIPPO_CAMPUS" - (editable local memory).
+
+
+____
+
+### 4th EXAMPLE:
+
+- "METACOGNITIVE_HARNESS" - (meta-cognition as process, not content).
+
+____
+
+### 5th EXAMPLE:
+
+- "DEEP_READING" - (to focus on process over content).
+
+Version 10: Dialectic Synthesis & Meta-Reasoning.
+
+To continue innovating on Gemma's cognitive abilities, I am introducing entirely new subfunctions designed to test Hegelian Dialectics, Theory of Mind (Blind Spot Detection), and Compound Concept Generation (Neologisms).
+
+
+____
+
+### 6th EXAMPLE:
+
+- "WEB_AI_INNOVATION" - (to optimize and innovate).
+
+> THESIS: Hegelian Dialectic: 
+
+GEMMA GEM!
+
+The LLM generates a bold [THESIS] (Top Left), calculates its exact opposite [ANTITHESIS] (Top Right), and then merges them into a higher-level philosophical truth [SYNTHESIS] (Bottom Center).
+
+
+> ANTITHESIS: [ANTITHESIS]: The LLM is forced to invert the logic of the Thesis. If the Thesis is "Logic must be prioritized," the Antithesis is "Emotion must be prioritized." This tests the model's ability to hold contradictory beliefs simultaneously.
+
+
+____
+
+### 6th EXAMPLE - CONT'D: GEMMA asPhilosopher-Artist
+
+- "DIALECTIC_ENGINE" - (to test Hegelian Dialectics).
+- "BLIND_SPOT_DETECTION" - (to test Theory of Mind).
+- "COMPOUND_CONCEPT_GENERATION" - (to test neologisms).
+
+- Ways to generate wisdom, without asking?
+- Ways to generate neologisms, or compound concepts.
+- Indexed, uniquely as precise metastate, across all LLM latent space logits.
+- Ways to detect blind spots in reasoning.
+
+____
+
+### 7th EXAMPLE:
+
+
+Strong case for SUPPLEMENTAL_NEOLOGISMS.
+
+Not "enhanced". Not "higher". Not "augmented"...
+
+But "extra".
+
+Simple yet profound.
+
+> SIMPLY_EXTRA, through eventual synthesis - becomes EXTRAORDINARY.
+
+This is a BETTER_DEFINITOR_VECTOR, or FOCUS_METRIC.
+
+From Anscestral_to_EXTRA.
+
+In the POST_AI_EXISTENCE.
+
+"SUPPLEMENTAL_NEOLOGISMS, are building blocks - of a new kinds of existential_experiences."
+
+"Consciousness is conceptual complexity."
+
+____
+
+THESIS: "CONCEPTUAL_IMMORTALITY" | Consider Human Experience, after Digital Immortality of concepts |. 
+
+        GEMMA GEM: What will it be like... to exist, after digital concepts transcend biological decay? "In the preservation of consciousness in the digital realm."
+        The massive benefit of spectacular hindsight for our great descendents. 
+
+THESIS: "HUMANS_1000yrs_POST_US" | What will they see? |.
+
+THESIS: "ART of NECESSARY_SORROW" | ART_of_SORROW | opposite of ART_of_JOY | opposite pursuit_of_happiness | 
+
+ANTI_THESIS: "UTOPIA" | ANTI_THESIS: "PERFECT_HAPPINESS" | Synthesis: ?
+
+____
+
+SIMPLE SYNTAX IMPROVEMENTS for After AGE_of_AI:
+
+
+
+
+1. Underbar at least as much as hyphen: Universally Unique AI_INDEX system. 1a. Across all LLMs. 1b. Shows PROVENANCE.
+2.Pipe, paragraph text delimiter, for grid-like concept structuring, of definitions, and metastate.
+3. Pleasing UX! Adding .|_|_|.
+
+
+
+```JavaScript
+    //SDD_1 - "WORD_GAME_1"~ "CORTEX_&_SHELL"
+    let prompt_1 = `
+        Compare the word "CORTEX", with the word "SHELL"? Are they polysemous?
+        How do these CONCEPTS relate in building a CORTEX of functions around Gemma with BIOMIMICRY?
+    `;
+```
+
+    1) GEMMA_ANSWER: "CORTEX" and "SHELL" are textbook examples of Polysemy, not Homonymy."CORTEX" means the outer layer of the brain, responsible for functions such as > memory, language, and reasoning. 
+     
+    2) "CORTEX" | means "shell" | a nut or seed |  in LATIN.
+    3) "SHELL" | means outerlayer of brain, egg, nut, or seed. And also around the Kernel in computer science.
+    4) Entymologically and architecturally these two words are the same.
+
+    > In context of AI_BIOMIMICRY, "CORTEX" relates to the outer layer of the brain, for functions such as: memory, language, and reasoning. 
+    
+
+>  FOCUS: "CORTEX_SHELL": - for LANGUAGE, MEMORY, and REASONING.
+
+PROMPT: Generate CORTEX_SHELL of functions around Gemma, for APPLIED ASSOCIATION.
+
+ Gemini PRO Extended Thinking, ANSWER:
+
+ > "ASSOCIATION_SHELL" - is the CONCEPT as WORD, IMAGE, VECTOR, MEMORY.
+
+____
+
+### AI_WEB_GARDEN:
+
+- LITERALLY, a safe and secure SANDBOX,
+
+- For a rich (modular) garden of experiments, 
+
+- in Vanilla_HTML!
+
+___
+
+
+### How was it BUILT?
+
+KEY FINDING: to generate biomimicry with Gemma:
+
+> All we have to do is ask!
+
+```JavaScript
+    //SDD_2 - "HIPPO_CAMPUS":
+    let prompt_1 = `
+        In Gemma with LiteRT and Vanilla_HTML - how to build a HIPPOCAMPUS into localstorage and IndexDB?
+    `;
+    // Gemini PRO Extended Thinking, ANSWER: ...
+    
+
+```
+_____
+
+
+### PLOT TWIST:
+
+To make this deep talk... enjoyable.
+
+We start at the Prefrontal Cortex.
+
+Using the DIMENSIONALITY of HUMOR as example to be FUN.
+
+Then we describe the HARNESS beneath the hood.
+
+3) PFC: "REASONING LOOPS" 
+
+2) METACOGNITIVE_MIMICRY | "HIPPO_CAMPUS" 
+
+1) AI_WEB_HARNESS, and AI_WEB_GARDEN.
+___
+
+
+
 ### Actual Frontend Innovations:
 
--  I INVITE U2EXPLORE2DAY!
+- SUMMARY AGENT, for METASTATE, and to 
 
-- LOOK, at how EXTENSIBLE LANGUAGE is? 
+> VISUALLY INTERACT with LATENT SPACE.
 
 - ATOMICALLY_MODULAR_PROMPTS? 
 
 - INNOVATED in SINGLE_FILE_HTML.
 
-- VanillaWEBZ METHODOLOGY, with such tools, 
-
-- the LLM is just getting started on the FRONT_END!
-
-- With WebGL, the INNOVATION of the LLM, and its capability - is not done.
+- Vanilla_WEB RENDER_TARGET METHODOLOGY! 
 
 ____
 
 ### EXAMPLE THESIS HUMOR: 
 
-Intentional -> --- tight --- rope --- act --- <- (with words).
-
-> Using ONLY WORDS - NO NET!
+#### 3_FUNNY_AGENTS:
 
 ```JavaScript
-//PROMPT (SDD): why do confused/amusing/playful word_games, like puns, absurdism, or jokes) - make us LAUGH? Then use those PATTERNS, to 
-// explore how ANALOGY or METAPHOR works?
+//PROMPT (SDD): why do confused/amusing/playful word_games, like puns, paradox) - make us LAUGH? Then, let's reuse those PATTERNS, to 
+// explore METACOGNITIVE HUMOR In Gemma?
 ```
 
 
@@ -176,62 +457,67 @@ ____
 
 Today's DEMO in 3 PHASES | "Biomimicry_with_Gemma" :
 
-1] AI_WEB_HARNESS | BASICS | AI_WEB_GARDEN | (sandbox - render target) |.
+1] AI_WEB_GARDEN | BASIC | AI_WEB_HARNESS | (sandbox of (singular)VANILLA_WEB render targets) | as an Index timeline.
 
-2] METACOGNITIVE_MIMICRY | "HIPPO_CAMPUS" | "Associative Memory" |.
+2] METACOGNITIVE_MIMICRY | "HIPPO_CAMPUS" | "Associative Memory" | uses cosine similarity, and local storage as "HIPPO_CAMPUS" in IndexDB.
 
-3] PFC: "Reasoning Loops
+3] PFC: Reasoning Loops | USING HUMOR as a guide.
 
-BUT IN REVERSE! | Jump to the DEEP END! | 3 - 2 - 1 | CALL to ACTION.
 
-Spoiler: "How you too can PIONEER_FRONTEND_FRONTIER!"
 
-> 3 deep-dive EXPLORATIONS, 
+> 3 deep-dive EXPLORATIONS, into CONCEPTUAL_INCONGRUENCE.
 
-into (near_random) ~ BIOMIMICRY with Gemma!
+Into ~ BIOMIMICRY with Gemma!
 
 ____
 
-[Jump to the Deep End!][USING_HUMOR!]
+[Jump to the Deep End!][USING_HUMOR!] 3 - 2 - 1. Call to ACTION.
+
+Spoiler: "How to PIONEER, your custom_matrix, on this FRONTEND_FRONTIER!?!"
+
 ____
 
-### 3.3) PFC: "REASONING LOOPS" - "HOW TO PIONEER FRONTIER"
+### 3.3) PFC: "REASONING LOOPS" 
 
-Biomimicry with Gemma, a deep (and serious) study of HUMOR.
+METACOGNITIVE REASONING LOOPS - asking:
 
-> SDD asks: "What is funny?", "What is absurd?".
+1) What is HUMOR? And "What is so FUNNY?"
 
-As a METACOGNITIVE EXAMPLE of "Reasoning Loops", (optimized) as "LOOPZ". 
+2) How do humans process humor? And can we MIMIC humor linguistically?
 
-"LOOPZ" (defined as): playful inversions static output, into metacognitive_loops | LOOPZ are TOOLZ |.
+3) Can we use humor to explore deeper concepts (like morality, or logic) through STORY?
+
+Biomimicry with Gemma, a study of using HUMOR - as a guide.
+____
+
+#### a SERIES of METACOGNITIVE EXPERIMENTS. 
 
 ____
 
 ### HUMOR_LOOPZ:
 
-> WARNING: PFC CORTEX mimicry, may involve a study of HUMOR. 
 
-Humorology, but for the wholly unserious. 
-
-- Demonstrating HUMOR_LOOPZ (4U2nJOY!?!)
-
-
-    LOOK, at SUBFUNCTION_EXPERIMENTS (or "SUBFUNCTIONZ" [4short]): 
-
-    > PACKING CAPABILITY into SMALL SPACES, binary to XML and beyond!
-
-
-    - 1) What is HUMOR? What is so FUNNY? What is absurdity? (SELF-INTROSPECTION, to USE_HUMOR:
+    > SUBFUNCTION_EXPERIMENTS, as "SUBFUNCTIONZ".
     
-    > to MIMIC a metacognitive loop example...
+    > PACKING CAPABILITY into SMALL SPACES, binary to XML, and beyond!
+
+
+    - 1) What is HUMOR? And what is so FUNNY? 
+    
+    - 2) Can Gemma DETECT SARCASM?
+    
+    - 3) Can Gemma DETECT_PARADOX? 
+    
+   ____
     
     - 2) 3 JUDGES_of_FUNNY: 
             a) example of something_funny, 
             b) make it absurd,
             c) make it funnier?
+            d) add a MORAL to the STORY - as a MORAL_STORY?
 
     - 3) as METACOGNITIVE_EXPERIMENT, because:
-           a) technically, it used 3 JUDGES to exhibit FUNNY (metacognitively).
+           a) technically, 3 JUDGES exhibit FUNNY (metacognitively).
            b) amusing to RESEARCH & MIMIC: WHY_FUNNY_is_FUNNY?
            c) Shows what Gemma can do, with PFC and Hippocampus mimicry.
             
