@@ -246,6 +246,7 @@
                     <option style="color:skyblue;" value="test_neolang">3.1) METACOGNITIVE: What makes something FUNNY? (metacognitive)</option>
                     <option style="color:skyblue;" value="test_context">3.2) JUDGE AGENTS: FUN_FUNNY_FUNNIER?</option>
                     <option style="color:skyblue;" value="test_medstate">3.3) HUMOR: Example of something funny?</option>
+                    <option style="color:skyblue;" value="test_biomimicry">3.3) BIOMIMICRY: Example topics for Gemma?</option>
                 </select>
             </div>
         </div>
@@ -1078,6 +1079,9 @@ Syntax is the architecture of the soul.`;
             } else if (TEST_ID === "test_medstate") {
                 displayDomain = "Example_of_Something_Funny?";
                 prompt = `Task: Generate exactly 10 EXAMPLES for the concept: "SOMETHING_FUNNY".\nConstraint: Output strictly as a single line of comma-separated values (CSV) without description.\nDo not include numbers, newlines, labels, or conversational text.`;
+            } else if (TEST_ID === "test_biomimicry") {
+                displayDomain = "Gemma Biomimicry?";
+                prompt = `Task: Generate exactly 10 EXAMPLE TOPICS for the concept: "Biomimicry with Gemma". List your ideas for CORTEX or HIPPOCAMPUS mimicry.\nConstraint: Output strictly as a single line of comma-separated values (CSV) without description.\nDo not include numbers, newlines, labels, or conversational text.`;
             } else {
                 displayDomain = val.toUpperCase();
                 prompt = `Task: Generate exactly 10 subtopics for the concept: "${val}".\nConstraint: Output strictly as a single line of comma-separated values (CSV) without description.\nDo not include numbers, newlines, labels, or conversational text.`;
