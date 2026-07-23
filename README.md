@@ -1,286 +1,292 @@
 # BIOMIMICRY_with_GEMMA: 
 
-#### DEMO PROLOGUE:
-
 Hello Google!
 
-I am Nash, and this is Gemma with Humor!
+I'm Nash, and this is Biomimicry Experiments with Gemma.
 
 Presentation for Google WebAI Wednesday.
+
+<img src="./imgs/a1.png" alt="AI_ALPHABITZA" width="380" height="241" />
+
+
+
+
 ____
 
+### WELCOME ALL!
 
-### A couple (professional) jokes?
+Hello Google team! It is an honor to be here today.
+I'm here to share with you BIOMIMICRY with Gemma!
 
-The actual title of this presentation is,
+   <img src="./imgs/a66.png" alt="Garden Brain" width="250" height="366" />
 
-> **"Biomimicry with Gemma: Metacognitive Spectroscopy witt LiteRT, Gemini, Vanilla_HTML, WebGPU, IndexDB, and WebGL."**
+____
+I'm Nash, and I'm incredibly excited to talk about an epic academic QUEST: 
 
-But, a study on "Gemma_with_Humor", is funnier.
+> HOW to MEASURE: spaces between CONCEPTS and WORDS.
 
-Who doesnt want to generate some jokes, across 3 agents, and vote on which is funniest in the chat.
+TODAY, we VISUALIZE 3 aspects of this MYSTERY, with Gemma!
+
+> BIOMIMETICALLY, METACOGNITIVELY, THEORETICALLY.
+
+As "myriadic" EXPERIMENTS for Gemma!
+___
+
+### BASIC OVERVIEW:
+
+3 PWA APPS with GEMMA as modular experiments.
+
+> Live DEMO APPS: from Gemini Pro Extended Thinking.
+
+1. BASIC: Gemma HARNESS as "AI_WEB_HARNESS", PWA - APP.
+2. BASIC: Prefrontal Cortex as "PFC_SUBFUNCTIONS",
+3. BASIC: Hippocampus as "HIPPO_CAMPUS",
+
+> CONCLUSION: "AI_WEB_GARDEN"
+___
+
+### GOALS:
+
+Today, how we use Gemma + Gemini + 1 HUMAN: to GROW an "AI_Web_Garden", like SEEDS, as a METAPHOR for learning.
+
+> To revisit: MODULAR_SYNTHESIS - on the FRONTEND (easily).
+
+Symbiotically, Gemma and humans, curate, cultivate, synthesize a type of BEAUTIFUL, evolving CONCEPTUAL_ECOLOGY, sporatically. 
+
+> Like gardeners and PIONEERS, on the FRONTEND_FRONTIER!
+
+Let's go!
+___
+
+### A BIT ABOUT ME:
+___
+
+University student (AI-MS), "AI SOLOPRENEUR": Deep Researcher, architect, founder, father and artist.
+
+> Passionate about ETHICAL tools to help humans! 
+
+<img src="./imgs/a0.png" alt="AI_ALPHABITZA" width="240" height="240" />
+
+
+Apex nerdery: token-maxxing perplexities since 1999! 
+
+Today, AI_RESEARCH around BIOMIMICRY. 
+
+> Gemini Pro Extended thinking. 
+> Curated by HUMAN (in the loop) 
 
 ___
 
-#### SDD: generating jokes.
+### THESIS
 
-[In HONOR of (recent) SDD principle]:
+For 2 decades, a search for ANSWERS.
 
-[HUMAN]: OK, let's try to be funny now. 
-And generate some "professional" jokes, for Google Web AI team?!? 
-
-It is a dry topic, about AI LINGUISTICS, and biomimicry studies.
-
-So can we spice it up with HUMOR?
-
-> THESIS: How do we use_humor in Gemma?
-
-1) Is "funnier" a word?  
-
-> Is "funzies" in the dictionary (yet)?
-
-About, "funnest", what are we doing about it?
-
-Nothing? We just avoid it? Just don't say it!
-
-The funnest is not funnier - but funzies is -  by definition - BOTH! Right?
-
-Now REMEMBER, this is for SCIENCE!
-
-So, at the outset, NOTE: all JOKES PROFESSIONAL!
-
-Not professional jokes, but the jokes must be pro...
-
-REMEMBER: Anything funny - must be strictly professional.
-
-> THESIS: what is the USE_of_HUMOR in LLMs (Gemma) and beyond?
-[HUMAN]:
-1) Can humor help memory?
-2) Can humor assist concept transfer?
-3) Is humor somehow a natural human reflection detection system?
-[MAIN_TOPIC]:
-4) How can be biomimic HUMOR in Gemma?
-
-
-[AGENT]:
-1) Is humor a marker of true understanding?
-2) Can humor enhance creativity and problem-solving?
-3) Can humor be used to improve human-AI interaction?
-4) Can humor be used to improve human-AI collaboration?
-5) Can humor be used to improve human-AI communication?
-6) Can humor be used to improve human-AI teamwork?
-7) Can humor be used to improve human-AI collaboration?
-
-____
-
-### A BIT ABOUT ME:
-
-I'm an AI researcher, architect, and artist. 
-
-I'm passionate about building ETHICAL tools to help humans. 
-
-I'm also a total nerd. It's true.
-
-Token-maxxing since 1999! 
-
-But that's fuzzy math. 
-
-I code late nights, weekends and holidays, even in mysleep.
-
-Admiring the irony of it all, that I spend way too much time alone,
-
-talking to myself - and now FANTASTICALLY - the deepest vibes possible,
-
-with Gemini Pro Extended thinking. 
-
-Solid. For decades now asking: 
+QUESTIONS like:
 
 > "What is sooo funny???"
 
-Now,  with NEW TOOLS, do we have NEW ANSWERS?
+I don't get it.
 
-Hello Google! You get to see the results!
+> G. Hinton, "If you answer what is funny, about something, you end up knowning quite a lot, about that thing."
 
+Today, we follow that sage advice.
+
+> With 3 LIVE DEMO - PWA APPS!
 ___
 
-### 3_WAY_JOKE_VOTE (GAME):
+### Thank you Google Web AI!
+___
 
-[HUMAN]:
-OK, let's try to be funny. 
-And generate some "professional" jokes. 
-1) how to make linguistics funny? Is it impossible? 
+> THANK YOU: Elisabeth and Jason, for this learning space. 
 
-#### JOKE 1: a serious scientific study of: "THE FUNZIES". For my teenage daughter. 
-2) At long last, why is "funner" still not a word? 
-What about "funnest"? Still not a word?
-Because, we are out of parameters? No room for "funnest" and "funner"?
-I see, but "for funzies" is on the fast-track into the dictionary.
-Why not funner? Why not funnest? 
-You know what I'm sayin' right? Is that quiloquialism?
-
-Why is it so hard to spell quiloquialism? Why is it so hard to say? Why does polysemy and homonymy make my brain hurt? And my mouth hurt. Is it funny, that the words that humans use to describe confusion - are the most confusing words in the English Language. Polysemy, Homonym, Hypernym, Hyponyms. The vocabulary to describe, the dilemma, is a dilemma? Because  brain goes blank when I hear the words - and they mean nothing. Metacognitively.
-
-
-
-
-How to BEST_COMMUNICATE, a couple DEEP LEARNING concepts?
-How to use humor communicate deep concepts?
-Does humor help us remember, does it help us understand reality?
-
-> And, how to be funny and professional - at the same time? 
-
-Yes, its true, humans get older every years. I've been token-maxxing since 1999, and
-
-all-of-a-sudden "we made sand think", and "we largely have code solved". It's amazing.
-
-So I spent some time to think about this.
-
-And at long last, I wonder how "funnest" is still not a word (yet)?
-
-Yes I agree, "funner" has no chance, it's too weird.
-
-4) You know what I'm sayin'? Is that phrase quiloquialisms? 
-
-Yes, I stay up late at night, considering why is it so easy to say "funner" and "funnest", the NON-words.
-And why it is so difficult to say  polysemy and homonymy, paranym and pronym - and they are words.
-
-Is it ironic, that the funner words are fun to say, are non words, while the real words, that are supposed to help describe confusion -  word make my mouth and brain hurt?  
-
-Late at night, as I research human confusion, it seems the vocabulary to describe the dilemma is the dilemma?
-
-That can't be right? Or is it correct? 
-Because the brain goes blank when I hear the words - they mean nothing. 
-
-Theoretically, Metaphorically, Metacognitively?
-
-Why is METACOGNITION so unfunny? Wait. Is unfunny a word? 
-
-Why can funner and funnest be words? Is it because we ran out of parameters?
-
-We don't have room for all the funner words?
-
-3)
-Are hyphens really better than underscores? 
-
-And tabs? I get tabs were never OK. 
-
-But underscores seem useful to me. What did underscores do to get banished from English?
-
-Are we sure? Or is it just that the keystroke is so far away, and we buried it under a SHIFT KEY.
-
-I think the UNDERSCORE KEY has an unfair disadvantage. It seems really useful to me.
-
-
-Yes, the generational hot topic of TABS_versus_SPACES - is OVER!
-
-Spaces won. Did you know that? Overnight. Zip, one update - tabs gone. 
-
-It's progress. We've got quotes, double quotes and backticks - all figured out! Right?
-
-That's amazing. What else? 
-
-So, we debate "hyphens_and_underscores" now (again)?
-
-I think, Underscores are underrated. Hyphens are all confused with the double hypen emdash thing, is it space or no space? It's too confusing. Worse, to use hypens correctly, we need to use them for almost every-other-word. It's confusing. But underscores on the other hand - are BEAUTIFUL! 
-And they are Elegant! Underscores say, lets bring these to concepts together, into synthesis, . 
-While hyphens saty 
-
-It's not easy to tell MATRIX MULTIPLICATION jokes. 
-
-The MATH is too poly-dimensional, and its just not funny.
-
-
-
-
-
-
-
- 4) other words like that that are non-words? Do you have funny - non words? Blendwords? Is metacognition funny? ever? always? 5) remember anything funny must be strictly professional. 6) Do not generate code yet. 7) we are going to create a 3_WAY_JOKE_VOTE game. It will use the 3_Way Column Layout in attached file. 8) There will be a Human that tells 3 JOKE_PROMPTS, as select combo box - jokes, to new subfunctions. 9) Then, it will pass those jokes, to a Gemma PROMPT, who will try to CLOWN on the INPUT, and generate a better set of JOKES. 10) then pass BOTH to a 3rd CLOWN_AGENT. To see if BOTH INPUTS unlock the funny from the "funner", "funniest"? funnest 
-
-
-### AXIOMATIC FOUNDATIONS:
-
-- Metacognitive Mimicry
-- Conceptual Seedbank
-- Dense Vector Libraries
-- Conceptual Spectroscope
-- Linguistic Cloud
-- Conceptual Manifold
-- Conceptual 
-
-
-
-
-
-
-- THANK YOU: Elisabeth and Jason. (and Gemma, Gemini, Google, and... human race!)
-
-> DEMO: "Biomimicry with Gemma"!
+~ LiteRT, and Gemma, Gemini, and Google!
+   
 
 ____
 
-#### Initial Explorations of"AI_WEB_GARDEN", 
+## INSPIRATIONS:
 
-METACOGNITIVE MIMICRY ~ RESEARCH!
+Deep gratitude to FRONTIER_PIONEERS!
 
-~ With Gemma 4, E2B, LiteRT, and Gemini Pro Extended Thinking. 
-
-> NOVEL TOOLS for humans, TO VISUALIZE & INTERACT with Gemma Latent Space.
-
-- Using 3D WebGL (three.js) and WebGPU,
-
-- To visualize CONCEPTUAL_MANIFOLD (mechanistic interpretability)!
-
-
-____
-
-
-### INSPIRATION:
-
-Deep Learning with deep gratitude to FRONTIER_PIONEERS:
-
-- Geoffrey Hinton, "AI Biomimicry", "Why is something funny?" & "Reasoning Loops".
+- Geoffrey Hinton, "AI Biomimicry", "Why is something funny?" & "Reasoning Loops", "Back Propagation".
 - Saphir-Worf Hypothesis: "Language shapes thought".
-- Douglas Hofstadter:  "BlendWords" & Analogy relevance.
+- Douglas Hofstadter:  "BlendWords", Neologistics, Analogy relevance.
 - Ferdinand de Saussure: "Linguistic Cloud", ontology, semiotics, structuralism. 
 - Palumbo: "Axiomatic approaches to language and ontology".
-- Arvin Srinivasan: "AI Reasoning on the Frontier", flyweight for innovation.
-- Rich Hsu (Nuro): "AUTO RESEARCH", "HARNESS (fungible) : Skills and Memories are MOAT (CU Boulder 2026)
-- Ray Kurzweil: "machines now expand human cognitive abilities", "Life 3.0: Age of Artificial Intelligence"
+- Rich Hsu (Nuro): "AUTO RESEARCH", "HARNESS (fungible) : "Skills and Memories are MOAT" (CU Boulder 2026)
+- Ray Kurzweil: "machines expand human cognitive abilities"
 
 - Jason Mayes, "Web AI", & VectorSearch.js!
 
 ___
 
 
-### AI FASCINATION:
 
-#### BIO: Soloprenur, AI RESEARCH Scientist, Architect, Founder.
+#### EXAMPLES of Prior Work: "RESEARCH_BASIS", 
 
-Scholar, polyglot, polymath, INFJ, enthusiast, creative, musician, designer, AI afficionado and digital content creator. 3D_Matrix Company Founder - back to COLORADO UNIVERSITY for AI RESEARCH post-grad Masters degree in MS-AI.
+> NUMEROUS EXPERIMENTS in multiple CODE LANGUAGES:
 
-#### PERSONAL QUEST: 
+"Biomimicry with Gemma"!
 
-- "What do song lyrics say, CONCEPTUALLY to AI, about humanity"? (25yrs)
+> METACOGNITIVE ~ RESEARCH!
+___
 
--  Metacognitive, "CONCEPTS_beneath_WORDS" in Gemma.
+1) <b>AXIOMIC VISUALIZATIONS (three.js):</b>
+___
+   <img src="./imgs/a5.png" alt="AXIOM" width="444" height="400" />
 
 ___
 
+2) <b>TREE LAYOUT:</b>
+___
+   <img src="./imgs/a4c.png" alt="TREE" width="444" height="300" />
 
-#### INTERESTS:
+> ~ With Gemma 4 E2B, LiteRT, and Gemini Pro Extended Thinking. 
+___
 
-- 3D Visualization of Latent Space in Gemma ("mechanistic interpretability).
-
-- METACOGNITION & BIOMIMICRY (architecture / design / innovation).
-
-- Gemma, Gemini, Agents, Skills, LLMs & Tokenizers (25+ yrs!).
-
-> Do you want to SEE INSIDE the MATRIX?
-
-~ A "CONCEPTUAL_SPECTROSCOPE" for Gemma (WebGPU, three.js 3D visualization, IndexDB).
+3) <b>CONVERSATIONAL INTERACTION SEQUENCES (many to many roles):</b>
+___
+   <img src="./imgs/a4.png" alt="Garden Brain" width="527" height="292" />
 
 ____
+
+4) <b>COMPLEX INTERACTION MAPS:</b>
+___
+
+   <img src="./imgs/a4b.png" alt="Garden Brain" width="277" height="422" />   <img src="./imgs/a4a.png" alt="Garden Brain" width="200" height="180" />   
+
+- Using 3D WebGL (three.js) and WebGPU,
+
+- To visualize CONCEPTUAL_MANIFOLD & CONTEXT_METASTATE (mechanistic interpretability)!
+
+___
+5) <b>Academic Whitepaper in Python, (Tokenizer in C++)</b>
+___
+
+   <img src="./imgs/a2.jpg" alt="Garden Brain" width="220" height="275" />
+
+
+___
+6) <b>Brain in JavaScript (three.js):</b>
+___
+
+   <img src="./imgs/b1.png" alt="Garden Brain" width="253" height="194" />
+
+___
+
+### TODAYS QUEST:
+
+#### CONCEPTUAL_SPECTROSCOPY: 
+
+- for "mechanistic interpretability"
+
+   <img src="./imgs/a61.png" alt="Spectroscopy" width="423" height="338" />
+
+> Visualize latent space (CONCEPTUALLY, not mathematically).
+
+> Visualize CONCEPTS - "AXIOMICALLY"
+___
+
+EXAMPLES of "AXIOMICS" 
+
+
+![alt text](b0.png)
+
+> 1) "AXIOMIC METASTATE"
+
+> 2) METAPHOR: "AXIOM_COLLECTOR":
+
+> 3) LAYOUT: "AXIOMICALLY" - from embed space.
+___
+
+#### HOW it WORKS!
+
+- 1) 3D Visualization, of "TARGET_TOKEN" to Gemma.
+   <img src="./imgs/c1.png" alt="Garden Brain" width="333" height="222" />
+- 2) "SUMMARY_AGENT" populates "METASTATE" ("HIPPO_CAMPUS").
+> 3) STUBBED TOPOLOGY | WebGL | C++ Shaders (for now).
+
+___
+___
+
+> 4) "CONCEPTUALIZE" button!
+___
+___
+
+   <img src="./imgs/c7.png" alt="Garden Brain" width="566" 
+height="363" />
+
+___
+___
+
+## MANY USEFUL TOPICS (APPLIED): 
+
+
+___
+___
+
+### 1) MEDICAL_METASTATE (APPLIED):
+
+   <img src="./imgs/c3.png" alt="Garden Brain" width="531" height="434" />
+   > Not Gemma in Browser - but Gemma as BROWSER?
+
+___
+___
+
+### 2) Dramatic Vector DENSITY:
+___
+___
+
+   <img src="./imgs/c4.png" alt="Garden Brain" width="516" height="472" />
+
+
+___
+___
+
+### 3) Dramatic APPLIED ARTICULATION:
+___
+___
+
+   <img src="./imgs/c8.png" alt="Garden Brain" width="549" height="372" />
+
+> Extra_Ability: of endless_drilldown.
+
+___
+___
+
+### 3) METACOGNITIVE_ABILITY:
+
+
+   <img src="./imgs/c9.png" alt="Garden Brain" width="468" height="367" />
+
+> Literally, thinking_about_thinking?
+___
+___
+
+### 4) CONCEPTUAL_SPECTROSCOPY (project):
+
+___
+___
+
+   <img src="./imgs/c2.png" alt="Garden Brain" width="666" height="322" />
+
+___
+___
+
+### 5) "METASTATE" - NEOLOGISTICS:
+
+___
+___
+
+   <img src="./imgs/c6.png" alt="Garden Brain" width="545" height="384" />
+
+> 1) PROOF: Gemma is FLUENT with NEOLOGISTICS?
+
+____
+____
+
+## LIVE DEMO!
+
 
 ### TECH_BLOG:
 
@@ -288,23 +294,22 @@ ____
 
 12 months of Experiments, Innovations, and Science surprises!
 
-> MIMICRY around: Cortex Associations.
 
-Virtually, a "MYRIADIC" GARDEN of EXPERIMENTS.
 
-> It's an "AI_WEB_GARDEN"!
-
-MIMICRY around the Hippocampus, called "HIPPO_CAMPUS".
-
-AI_CONCEPT_COMPILER - localization of dense_vector_libraries.
 ___
 
 
 ### AI_RESEARCH_GARDENS:  
 
-"AI_RESEARCH_GARDENS", would be the diaspora of myriad AI_WEB_GARDENS.
+"AI_RESEARCH_GARDENS", a myriadic, diaspora in AI_WEB_GARDENS.
+
+   <img src="./imgs/b3.png" alt="Garden Brain" width="362" height="245" />
+
 
 > Gemma as a CONCEPTUAL_SEEDBANK for a rich garden of concepts, across all_time.
+
+   <img src="./imgs/b6.png" alt="Garden Brain" width="384" height="241" />
+
 
 #### EXAMPLES:
 
@@ -313,17 +318,30 @@ ___
 - 2] HIPPOCAMPUS_MIMICRY ( I/O, Compare, EDIT, DELETE),
 - 3] AI_WEB_GARDEN, & 
 - 4] AI_FRACTAL_TREE (radial).
+
+   <img src="./imgs/b5.png" alt="Garden Brain" width="380" height="242" />
+
 ___
 
 ### DEMO OVERVIEW - COUNTDOWN
 
 We start at the Prefrontal Cortex.
+   <img src="./imgs/b4.png" alt="Garden Brain" width="433" height="248" />
+
+
+
 
 Then the "HIPPO_CAMPUS" biomimicry.
 
+   <img src="./imgs/b7.png" alt="Garden Brain" width="354" height="242" />
+
 Counting down to "AI_WEB_HARNESS".
 
-Then "AI_WEB_GARDEN" and "AI_WEB_FRACTALZ" 
+   <img src="./imgs/b8.png" alt="Garden Brain" width="371" height="282" />
+
+Then "AI_WEB_GARDEN" and "AI_WEB_FRACTALZ" (CONCEPT & THEORY) 
+
+   <img src="./imgs/b9.png" alt="Garden Brain" width="430" height="406" />
 
 Using HUMOR as example to be FUN.
 
@@ -334,7 +352,13 @@ Using HUMOR as example to be FUN.
 1) AI_WEB_HARNESS, and AI_WEB_GARDEN.
 
 0) CONCLUSION | TAKE_AWAY | KEY_POINTS 
+
+   <img src="./imgs/b2.png" alt="Garden Brain" width="380" height="400" />
 ___
+
+
+
+
 
 ## 3] PFC: "REASONING OPTIMIZATIONS" 
 
@@ -549,6 +573,23 @@ To continue innovating on Gemma's cognitive abilities, I am introducing entirely
 
 
 ____
+
+
+
+
+### AXIOMATIC FOUNDATIONS:
+
+- Metacognitive Mimicry
+- Conceptual Seedbank
+- Dense Vector Libraries
+- Conceptual Spectroscope
+- Linguistic Cloud
+- Conceptual Manifold
+- Conceptual 
+
+
+
+
 
 ### 6th EXAMPLE:
 
@@ -2338,32 +2379,8 @@ ____
 
    ___
 
-   <img src="./imgs/a1.png" alt="AI_ALPHABITZA" width="380" height="241" />
-   <img src="./imgs/a2.jpg" alt="Garden Brain" width="540" height="675" />
-   <img src="./imgs/a3.png" alt="Garden Brain" width="516" height="472" />
-   <img src="./imgs/a4.png" alt="Garden Brain" width="527" height="292" />
-   <img src="./imgs/a4a.png" alt="Garden Brain" width="430" height="269" />
-   <img src="./imgs/a4b.png" alt="Garden Brain" width="353" height="422" />
-   <img src="./imgs/a4c.png" alt="Garden Brain" width="388" height="282" />
-   <img src="./imgs/a5.png" alt="Garden Brain" width="527" height="429" />
-   <img src="./imgs/b1.png" alt="Garden Brain" width="253" height="194" />
-   <img src="./imgs/b2.png" alt="Garden Brain" width="380" height="400" />
-   <img src="./imgs/b3.png" alt="Garden Brain" width="362" height="245" />
-   <img src="./imgs/b4.png" alt="Garden Brain" width="433" height="248" />
-   <img src="./imgs/b5.png" alt="Garden Brain" width="380" height="242" />
-   <img src="./imgs/b6.png" alt="Garden Brain" width="384" height="241" />
-   <img src="./imgs/b7.png" alt="Garden Brain" width="354" height="242" />
-   <img src="./imgs/b8.png" alt="Garden Brain" width="371" height="282" />
-   <img src="./imgs/b9.png" alt="Garden Brain" width="430" height="406" />
-   <img src="./imgs/c1.png" alt="Garden Brain" width="639" height="447" />
-   <img src="./imgs/c2.png" alt="Garden Brain" width="672" height="358" />
-   <img src="./imgs/c3.png" alt="Garden Brain" width="531" height="434" />
-   <img src="./imgs/c4.png" alt="Garden Brain" width="516" height="472" />
-   <img src="./imgs/c5.png" alt="Garden Brain" width="461" height="377" />
-   <img src="./imgs/c6.png" alt="Garden Brain" width="545" height="384" />
-   <img src="./imgs/c7.png" alt="Garden Brain" width="566" height="363" />
-   <img src="./imgs/c8.png" alt="Garden Brain" width="549" height="372" />
-   <img src="./imgs/c9.png" alt="Garden Brain" width="468" height="367" />
+   
+
    <img src="./imgs/c99.png" alt="Garden Brain" width="671" height="450" />
    <img src="./imgs/d1.png" alt="Garden Brain" width="606" height="370" />
    <img src="./imgs/d2.png" alt="Garden Brain" width="586" height="390" />
